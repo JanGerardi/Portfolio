@@ -1,0 +1,116 @@
+section{
+    background-color: rgb(103, 154, 172);
+}
+
+#content{
+    width: 100%;
+    height: 88dvh;
+    max-width: 1920px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    display: flex;
+
+    .section-content{
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+
+        .left-section{
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span{
+                font-size: 48px;
+            }
+
+            h1{
+                font-size: 64px;
+            }
+
+            button{
+                color: white;
+                width: 140px;
+                height: 40px;
+                background: none;
+                border-color: white;
+                border-style: solid;
+                border-radius: 20px;
+                border-width: 1px;
+                font-size: 16px;
+
+                &:hover{
+                    background-color: rgb(255, 131, 79);;
+                }
+            }
+
+            .scroll-down{
+                margin-top: 80px;
+                width: fit-content;
+                height: fit-content;
+
+                img:first-child {
+                    display: block;
+                    animation-name: spin;
+                    animation-duration: 8s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+
+                img:last-child {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .right-section{
+            height: 100%;
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 200px;
+            
+        }
+    }
+
+    .page-indicator{
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 12dvh;
+
+        div{
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 131, 79);
+            border-radius: 50%;
+        }
+
+        a{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
