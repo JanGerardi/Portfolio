@@ -1,0 +1,105 @@
+section{
+    background-color: rgb(34, 34, 34);
+}
+
+#content{
+    width: 100%;
+    height: 100dvh;
+    max-width: 1920px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    color: rgb(246, 246, 228);
+
+    .skill-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .head{
+            height: 12dvh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 50px;
+            }
+        }
+
+        .section-content{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            padding-top: 50px;
+
+            .top-content{
+                padding-bottom: 50px;
+
+                h2{
+                    font-size: 84px;
+                }
+
+                .content-container{
+                    background-color: rgb(103, 154, 172);
+                    width: 600px;
+                    margin-top: 50px;
+                    padding: 30px;
+                }
+            }
+
+            .bottom-content{
+                display: flex;
+                height: 50%;
+
+                .study-container{
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+
+                    .study-icon{
+                        width: fit-content;
+                        height: fit-content;
+
+                        img:first-child {
+                            display: block;
+                            height: 200px;
+                        }
+
+                        img:last-child {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-indicator{
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        div{
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 131, 79);
+            transform: rotate(45deg);
+        }
+
+        a{
+            width: 10px;
+            height: 10px;
+            background-color: rgb(246, 246, 228);
+            border-radius: 50%;
+        }
+    }
+}
