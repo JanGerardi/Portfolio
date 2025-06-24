@@ -1,2 +1,5 @@
-<p>skill-list works!</p>
-<app-single-skill></app-single-skill>
+<section id="skill-list">
+    @for (item of skills; track $index) {
+    <app-single-skill [skill]="item"></app-single-skill>
+    }
+</section>
