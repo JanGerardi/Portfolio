@@ -21,7 +21,7 @@ export class SkillListComponent {
     },
     {
       image: "./assets/image/skills/git_icon.png",
-      name: "git",
+      name: "Git",
     },
     {
       image: "./assets/image/skills/html_icon.png",
@@ -37,7 +37,7 @@ export class SkillListComponent {
     },
     {
       image: "./assets/image/skills/typescript_icon.png",
-      name: "Typescript",
+      name: "TypeScript",
     },
   ]
 

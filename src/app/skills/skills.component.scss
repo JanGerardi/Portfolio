@@ -34,7 +34,6 @@ section{
             padding-top: 50px;
 
             .top-content{
-                padding-bottom: 50px;
 
                 h2{
                     font-size: 84px;
@@ -74,6 +73,10 @@ section{
                             transform: translate(-50%, -50%);
                         }
                     }
+                }
+
+                .skill-list{
+                    padding-bottom: 50px;
                 }
             }
         }
