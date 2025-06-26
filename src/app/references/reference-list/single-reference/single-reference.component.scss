@@ -1,0 +1,51 @@
+section{
+    display: flex;
+    flex-direction: column;
+
+    .reference{
+        color: rgb(246, 246, 228);
+        border: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 20px;
+
+        .top-content{
+            display: flex;
+            align-items: center;
+            padding-bottom: 15px;
+
+            h3{
+            font-size: 24px;
+            }
+
+            img{
+                position: absolute;
+                right: 0;
+                height: 40px;
+                display: none;
+            }
+        }
+
+        .position{
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    .linkedin{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30px;
+
+        a{
+            color: rgb(246, 246, 228);
+            font-size: 18px;
+            font-weight: 700;
+
+            &:hover{
+                color: rgb(255, 131, 79);;
+            }
+        }
+    }
+}

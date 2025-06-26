@@ -1,0 +1,7 @@
+<section id="references-list">
+    @for (item of references; track $index) {
+        <div class="position-{{$index}}">
+            <app-single-reference [reference]="item"></app-single-reference>
+        </div>
+    }
+</section>

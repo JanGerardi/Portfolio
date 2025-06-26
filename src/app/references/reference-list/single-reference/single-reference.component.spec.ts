@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SingleSkillComponent } from './single-skill.component';
 
-describe('SingleSkillComponent', () => {
-  let component: SingleSkillComponent;
-  let fixture: ComponentFixture<SingleSkillComponent>;
+import { SingleReferenceComponent } from './single-reference.component';
+
+describe('SingleReferenceComponent', () => {
+  let component: SingleReferenceComponent;
+  let fixture: ComponentFixture<SingleReferenceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SingleSkillComponent]
+      imports: [SingleReferenceComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SingleSkillComponent);
+    fixture = TestBed.createComponent(SingleReferenceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
