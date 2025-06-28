@@ -39,6 +39,7 @@ section{
             height: 100%;
             display: flex;
             flex-direction: column;
+            padding-right: 50px;
 
             .question{
                 font-size: 28px;
@@ -60,8 +61,123 @@ section{
         }
 
         .right-content{
-            height: 100%;
             width: 55%;
+            color: rgb(246, 246, 228);
+            padding: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            .top-formular{
+                display: flex;
+                gap: 40px;
+                font-size: 20px;
+                width: 100%;
+
+                div{
+                    width: 50%;
+
+                    h3{
+                        padding-left: 10px;
+                    }
+
+                    input{
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid;
+                        border-color: rgb(255, 131, 79);
+                        margin-top: 20px;
+                        padding: 10px;
+                        outline: none;
+                        caret-color: rgb(246, 246, 228);
+                        color: rgb(246, 246, 228);
+                    }
+                }
+            }
+
+            .center-formular{
+                font-size: 20px;
+                width: 100%;
+                padding-top: 70px;
+
+                h3{
+                    padding-left: 10px;
+                }
+
+                input{
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid;
+                    border-color: rgb(255, 131, 79);
+                    margin-top: 20px;
+                    padding: 10px;
+                    outline: none;
+                    caret-color: rgb(246, 246, 228);
+                    color: rgb(246, 246, 228);
+                }
+            }
+
+            .privacy{
+                display: flex;
+                padding-top: 50px;
+                gap: 10px;
+
+                a{
+                    color: rgb(255, 131, 79);
+                }
+
+                input[type="checkbox"] {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid rgb(255, 131, 79);
+                    border-radius: 2px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    position: relative;
+                }
+
+                input[type="checkbox"]:checked::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 35%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 4px;
+                    height: 8px;
+                    border: solid rgb(255, 131, 79);
+                    border-width: 0 2px 2px 0;
+                }
+            }
+
+            .button-formular{
+                width: 100%;
+                padding-top: 50px;
+                display: flex;
+                justify-content: center;
+
+                button{
+                    color: rgb(246, 246, 228);;
+                    width: 140px;
+                    height: 40px;
+                    background: none;
+                    border-color: rgb(246, 246, 228);;
+                    border-style: solid;
+                    border-radius: 20px;
+                    border-width: 1px;
+                    font-size: 16px;
+                    margin-right: 40px;
+
+                    &:hover{
+                        background-color: rgb(255, 131, 79);
+                    }
+                }
+            }
         }
     }
 
