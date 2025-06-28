@@ -1,10 +1,11 @@
 footer{
     background-color: rgb(34, 34, 34);
+    color: rgb(246, 246, 228);
 }
 
 #content{
     width: 100%;
-    height: 12dvh;
+    height: 15dvh;
     max-width: 1920px;
     padding-left: 100px;
     padding-right: 100px;
@@ -13,45 +14,34 @@ footer{
     align-items: center;
 }
 
-#contact-bar{
+#footer-symbols{
+    height: 100%;
+    width: 350px;
     display: flex;
-    align-items: center;
     gap: 20px;
 
-    img{
-        height: 18px;
-        width: 18px;
-        cursor: pointer;
+    img:first-child {
+        height: 180px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    img:last-child {
+        height: 250px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
-.logo{
-    height: 50px;
-}
-
-#menu-bar{
+#footer-contact{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 
-    button{
-        background: none;
-        color: rgb(246, 246, 228);;
-        border-color: rgb(246, 246, 228);;
-        border-style: solid;
-        border-width: 1.5px;
-        padding: 8px;
-        border-radius: 50%;
-        cursor: pointer;
-
-        &:hover{
-            background-color: rgb(255, 131, 79);
-        }
-    }
-
-    .burger-menu{
-        font-size: 32px;
-        color: rgb(246, 246, 228);;
+    a{
+        color: rgb(246, 246, 228);
         cursor: pointer;
 
         &:hover{
