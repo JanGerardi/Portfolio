@@ -225,8 +225,12 @@ section{
             animation-iteration-count: infinite;
             animation-timing-function: linear;
 
-            @media(max-width: 620px){
+            @media(max-width: 820px){
                 height: 100px;
+            }
+
+            @media(max-width: 620px){
+                height: 90px;
             }
 
             @media(max-width: 401px){
@@ -240,8 +244,12 @@ section{
             left: 50%;
             transform: translate(-50%, -50%);
 
-            @media(max-width: 620px){
+            @media(max-width: 820px){
                 height: 30px;
+            }
+
+            @media(max-width: 620px){
+                height: 27px;
             }
 
             @media(max-width: 401px){
