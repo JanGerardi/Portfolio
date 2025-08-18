@@ -71,11 +71,67 @@ header{
 
     .burger-menu{
         font-size: 32px;
-        color: rgb(246, 246, 228);;
+        color: rgb(246, 246, 228);
         cursor: pointer;
 
         &:hover{
             color: rgb(255, 131, 79);
+        }
+    }
+}
+
+.menu{
+    position: fixed;
+    top: 26px;
+    right: 89px;
+    padding: 15px;
+    background-color: rgb(246, 246, 228);
+    border-radius: 5px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: none;
+
+    @media(max-width: 850px){
+        right: 39px;
+    }
+
+    @media(max-width: 550px){
+        right: 19px;
+    }
+
+    .top-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        color: rgb(103, 154, 172);
+        gap: 70px;
+        padding-bottom: 20px;
+
+        img{
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+
+    ul{
+        font-size: 22px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+        li{
+
+            a{
+                color: rgb(34, 34, 34);
+
+                &:hover {
+                    color: rgb(103, 154, 172);
+                }
+            }
+            
         }
     }
 }

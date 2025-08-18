@@ -6,9 +6,41 @@
     gap: 20px;
     padding: 30px;
     padding-bottom: 0;
+    font-size: 24px;
+
+    @media(max-width: 1540px){
+        font-size: 20px;
+    }
+
+    @media(max-width: 680px){
+        padding: 30px 20px;
+    }
+
+    @media(max-width: 680px){
+        padding: 30px 10px;
+    }
+
+    @media(max-width: 420px){
+        font-size: 16px;
+    }
 
     img{
-        height: 70px;
-        width: 70px;
+        height: 100px;
+        width: 100px;
+
+        @media(max-width: 1540px){
+            height: 82px;
+            width: 82px;
+        }
+
+        @media(max-width: 830px){
+            height: 70px;
+            width: 70px;
+        }
+
+        @media(max-width: 420px){
+            height: 60px;
+            width: 60px;
+        }
     }
 }
