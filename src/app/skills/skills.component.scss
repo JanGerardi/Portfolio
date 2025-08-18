@@ -1,8 +1,8 @@
-section{
+section {
     background-color: rgb(34, 34, 34);
 }
 
-#content{
+#content {
     width: 100%;
     height: 100dvh;
     max-width: 1920px;
@@ -11,33 +11,33 @@ section{
     display: flex;
     color: rgb(246, 246, 228);
 
-    @media(max-width: 1415px){
+    @media(max-width: 1415px) {
         padding: 0px 50px;
     }
 
-    @media(max-width: 1180px){
+    @media(max-width: 1180px) {
         padding: 0px 30px;
     }
 
-    .skill-content{
+    .skill-content {
         display: flex;
         flex-direction: column;
         width: 100%;
 
-        .head{
+        .head {
             height: 12dvh;
             display: flex;
             align-items: center;
             font-size: 32px;
             color: rgb(246, 246, 228);
 
-            .logo{
+            .logo {
                 height: 50px;
                 margin-right: -7px;
             }
         }
 
-        .section-content{
+        .section-content {
             width: 100%;
             height: 88dvh;
             padding-left: 50px;
@@ -46,10 +46,10 @@ section{
                 padding-left: 0;
             }
 
-            .top-content{
+            .top-content {
                 height: 30%;
 
-                h2{
+                h2 {
                     font-size: 64px;
 
                     @media(max-width: 950px) {
@@ -73,19 +73,19 @@ section{
                     }
                 }
 
-                .content-container{
+                .content-container {
                     background-color: rgb(103, 154, 172);
                     width: 600px;
                     margin-top: 50px;
                     padding: 30px;
 
-                    @media(max-width: 760px){
+                    @media(max-width: 760px) {
                         width: 100%;
                     }
                 }
             }
 
-            .bottom-content{
+            .bottom-content {
                 display: flex;
                 justify-content: space-between;
                 height: 70%;
@@ -100,7 +100,7 @@ section{
                     padding-bottom: 30px;
                 }
 
-                .study-icon{
+                .study-icon {
                     display: flex;
                     align-self: flex-end;
                     width: fit-content;
@@ -136,13 +136,13 @@ section{
                     }
                 }
 
-                .skill-list{
+                .skill-list {
                     width: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    @media(max-width: 1780px){
+                    @media(max-width: 1780px) {
                         width: 60%;
                     }
 
@@ -154,7 +154,7 @@ section{
         }
     }
 
-    .page-indicator{
+    .page-indicator {
         width: 50px;
         height: 100%;
         display: flex;
@@ -167,14 +167,14 @@ section{
             display: none;
         }
 
-        div{
+        div {
             width: 10px;
             height: 10px;
             background-color: rgb(255, 131, 79);
             transform: rotate(45deg);
         }
 
-        a{
+        a {
             width: 10px;
             height: 10px;
             background-color: rgb(246, 246, 228);
@@ -183,11 +183,12 @@ section{
     }
 }
 
-@keyframes spin{
-    0%{
+@keyframes spin {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }

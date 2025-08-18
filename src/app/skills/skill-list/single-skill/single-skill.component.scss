@@ -1,4 +1,4 @@
-.skill{
+.skill {
     color: rgb(246, 246, 228);
     flex-direction: column;
     display: flex;
@@ -8,39 +8,54 @@
     padding-bottom: 0;
     font-size: 24px;
 
-    @media(max-width: 1540px){
+    @media(max-width: 1540px) {
         font-size: 20px;
     }
 
-    @media(max-width: 680px){
+    @media(max-width: 680px) {
         padding: 30px 20px;
     }
 
-    @media(max-width: 680px){
+    @media(max-width: 680px) {
         padding: 30px 10px;
     }
 
-    @media(max-width: 420px){
+    @media(max-width: 420px) {
         font-size: 16px;
     }
 
-    img{
+    img {
         height: 100px;
         width: 100px;
+        animation: breath 2s infinite;
 
-        @media(max-width: 1540px){
+        @media(max-width: 1540px) {
             height: 82px;
             width: 82px;
         }
 
-        @media(max-width: 830px){
+        @media(max-width: 830px) {
             height: 70px;
             width: 70px;
         }
 
-        @media(max-width: 420px){
+        @media(max-width: 420px) {
             height: 60px;
             width: 60px;
         }
+    }
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
