@@ -10,6 +10,10 @@ section{
         padding: 20px;
         max-width: 400px;
 
+        @media(max-width: 1000px) {
+            max-width: 100%;
+        }
+
         .top-content{
             display: flex;
             align-items: center;
@@ -38,6 +42,11 @@ section{
         display: flex;
         justify-content: flex-end;
         padding-top: 30px;
+
+        @media(max-width: 1000px) {
+            padding-top: 10px;
+            margin-right: 20px;
+        }
 
         a{
             color: rgb(246, 246, 228);
