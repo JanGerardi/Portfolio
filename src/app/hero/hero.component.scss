@@ -105,8 +105,8 @@ section{
                 }
             }
 
-            button{
-                color: rgb(246, 246, 228);;
+            .button-link{
+                color: rgb(246, 246, 228);
                 width: 140px;
                 height: 40px;
                 background: none;
@@ -114,7 +114,10 @@ section{
                 border-style: solid;
                 border-radius: 20px;
                 border-width: 1px;
-                font-size: 16px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 @media(max-height: 740px){
                     width: 115px;
