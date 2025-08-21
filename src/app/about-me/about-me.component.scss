@@ -1,60 +1,126 @@
-section{
+section {
     background-color: rgb(246, 246, 228);
 }
 
-#content{
+#content {
     width: 100%;
     height: 100dvh;
     max-width: 1920px;
-    padding-left: 100px;
-    padding-right: 100px;
+    max-height: 1080px;
+    padding: 0px 100px;
     display: flex;
 
-    .about-content{
+    @media(max-width: 1415px) {
+        padding: 0px 50px;
+    }
+
+    @media(max-width: 1180px) {
+        padding: 0px 30px;
+    }
+
+    .about-content {
         display: flex;
         flex-direction: column;
         width: 100%;
 
-        .head{
+        .head {
             height: 12dvh;
-            width: 100%;
             display: flex;
             align-items: center;
+            font-size: 32px;
+            color: rgb(34, 34, 34);
 
-            img{
+            .logo {
                 height: 50px;
+                margin-right: -7px;
             }
         }
 
-        .section-content{
+        .section-content {
             width: 100%;
-            height: 100%;
+            height: 88dvh;
             padding-left: 50px;
             padding-top: 50px;
             display: flex;
             justify-content: space-between;
 
-            img{
-                height: 300px;
+            @media(max-width: 1150px) {
+                padding-top: 0px;
             }
 
-            .about-background{
+            @media(max-width: 850px) {
+                padding: 0px;
+            }
+
+            .about-background {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
 
-                h2{
-                    font-size: 64px;
+                @media(max-width: 1150px) {
+                    justify-content: flex-end;
                 }
 
-                img{
-                    width: 550px;
+                @media(max-width: 450px) {
+                    margin: 0px -10px;
+                }
+
+                h2 {
+                    font-size: 64px;
+
+                    @media(max-width: 950px) {
+                        font-size: 54px;
+                    }
+
+                    @media(max-width: 760px) {
+                        font-size: 48px;
+                    }
+                }
+
+                img {
+                    width: 560px;
                     height: 700px;
+                    transform: scaleX(-1);
+
+                    @media(max-width: 1150px) {
+                        position: absolute;
+                        top: 10%;
+                        left: 0;
+                        width: 480px;
+                        height: 600px;
+                    }
+
+                    @media(max-width: 950px) {
+                        position: absolute;
+                        top: 10%;
+                        left: 0;
+                        width: 400px;
+                        height: 500px;
+                    }
+
+                    @media(max-width: 550px) {
+                        width: 352px;
+                        height: 440px;
+                    }
+
+                    @media(max-width: 550px) {
+                        width: 352px;
+                        height: 440px;
+                    }
+
+                    @media(max-width: 450px) {
+                        width: 304px;
+                        height: 380px;
+                    }
+
+                    @media(max-width: 400px) {
+                        width: 280px;
+                        height: 350px;
+                    }
                 }
             }
 
-            .about-container{
-                height: 250px;
+            .about-container {
                 width: 700px;
                 background-color: rgb(34, 34, 34);
                 position: absolute;
@@ -66,36 +132,71 @@ section{
                 display: flex;
                 flex-direction: column;
 
-                p{
-                    padding: 35px;
-                    padding-bottom: 20px;
+                @media(max-width: 1330px) {
+                    width: 600px;
                 }
 
-                .about-more{
+                @media(max-width: 1230px) {
+                    width: 550px;
+                }
+
+                @media(max-width: 1150px) {
+                    top: 75%;
+                }
+
+                @media(max-width: 950px) {
+                    width: 400px;
+                }
+
+                @media(max-width: 550px) {
+                    top: 70%;
+                    left: 55%;
+                    width: 350px;
+                }
+
+                @media(max-width: 450px) {
+                    left: 50%;
+                    width: 300px;
+                }
+
+                @media(max-width: 380px) {
+                    width: 100%;
+                }
+
+                p {
+                    padding: 35px;
+                    padding-bottom: 35px;
+                }
+
+                .about-more {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     padding: 35px;
                     padding-top: 0;
-                    margin-top: auto; // Schiebt den Block ganz nach unten
+                    margin-top: auto;
 
-                    img{
+                    img {
                         height: 32px;
+                        animation: bounce 2.5s linear infinite;
                     }
 
-                    button{
-                        color: rgb(246, 246, 228);;
+                    button {
+                        color: rgb(246, 246, 228);
+                        ;
                         width: 140px;
                         height: 40px;
                         background: none;
-                        border-color: rgb(246, 246, 228);;
+                        border-color: rgb(246, 246, 228);
+                        ;
                         border-style: solid;
                         border-radius: 20px;
                         border-width: 1px;
                         font-size: 16px;
 
-                        &:hover{
-                            background-color: rgb(255, 131, 79);;
+                        &:hover {
+                            background-color: rgb(255, 131, 79);
+                            ;
                         }
                     }
                 }
@@ -103,7 +204,7 @@ section{
         }
     }
 
-    .page-indicator{
+    .page-indicator {
         width: 50px;
         height: 100%;
         display: flex;
@@ -112,18 +213,40 @@ section{
         flex-direction: column;
         gap: 20px;
 
-        div{
+        @media(max-width: 550px) {
+            display: none;
+        }
+
+        div {
             width: 10px;
             height: 10px;
             background-color: rgb(255, 131, 79);
             transform: rotate(45deg);
         }
 
-        a{
+        a {
             width: 10px;
             height: 10px;
             background-color: rgb(34, 34, 34);
             border-radius: 50%;
         }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

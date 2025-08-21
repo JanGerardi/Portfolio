@@ -15,4 +15,17 @@
     .position-2 {
         transform: translateY(200px);
     }
+
+    @media(max-width: 1000px) {
+        flex-direction: column;
+        padding-top: 0;
+        gap: 30px;
+        .position-0, .position-1, .position-2 {
+            transform: none;
+        }
+    }
+
+    @media(max-width: 810px) {
+        padding: 0;
+    }
 }

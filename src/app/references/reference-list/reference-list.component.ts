@@ -12,21 +12,21 @@ export class ReferenceListComponent {
 
   references: Array<SingleReference> = [
     {
-      name: "A",
-      comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia rem modi aperiam alias tempore ab iusto. Iste minima corrupti earum totam, esse laudantium quibusdam sunt, ipsam inventore deleniti similique.",
-      position: "Team Partner",
+      name: "Kilian Heyne",
+      comment: "Ich hatte das große Glück, mit Jan am „Join“-Projekt zu arbeiten. Wie ein erfahrener Product Owner übernahm er die Kommunikation und Organisation im Team und sorgte für klare Strukturen, die uns ermöglichten das Projekt in verkürzter Zeit umzusetzen. Ein echter Gewinn für jedes Team - jederzeit wieder!",
+      position: "Team Partner | Join",
       linkedin: "",
     },
     {
-      name: "B",
-      comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia rem modi aperiam alias tempore ab iusto. Iste minima corrupti earum totam, esse laudantium quibusdam sunt, ipsam inventore deleniti similique.",
-      position: "Team Partner",
+      name: "Samaneh Papoli",
+      comment: "Vielen Dank für deine ganze Unterstützung und Zusammenarbeit. Deine Geduld und dein starkes Teamgefühl haben wirklich geholfen, die Arbeit voranzubringen. Besonders danke ich dir dafür, dass du dir für mich Zeit genommen, alles in Ruhe erklärt und mir geholfen hast, die Dinge besser und genauer zu verstehen. Es bedeutet mir echt viel, dich im Team zu haben.",
+      position: "Team Partner | Join",
       linkedin: "",
     },
     {
-      name: "C",
-      comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia rem modi aperiam alias tempore ab iusto. Iste minima corrupti earum totam, esse laudantium quibusdam sunt, ipsam inventore deleniti similique.",
-      position: "Team Partner",
+      name: "Irene Kober",
+      comment: "Jan ist ein hervorragender Teamplayer, der sich gerne und auch zielführend in die Gruppe eingebracht hat. Er arbeitet sich mit großer Neugierde und Sorgfalt in neue Themen und war damit eine absolute Bereicherung für das Team. Cleaner Code und Einfühlvermögen für andere Teammitglieder sind für ihn eine Selbstverständlichkeit - genauso darf der Spaß beim Arbeiten für ihn nicht fehlen.",
+      position: "Team Partner | Join",
       linkedin: "",
     }
   ]
