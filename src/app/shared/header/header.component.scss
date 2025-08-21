@@ -90,7 +90,7 @@ header{
     box-shadow: -2px 0 10px rgba(0,0,0,0.5);
     transition: right 0.3s ease;
     z-index: 999;
-    display: none;
+    flex-direction: column;
 
     @media(max-width: 850px){
         right: 39px;
@@ -132,6 +132,23 @@ header{
                 }
             }
             
+        }
+    }
+
+    .contact-bar-menu{
+        display: none;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+
+        img{
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+        }
+
+        @media(max-width: 550px){
+            display: flex;
         }
     }
 }

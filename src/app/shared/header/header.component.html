@@ -1,20 +1,24 @@
 <header>
     <div id="content">
         <div id="contact-bar">
-            <img
+            <a href="https://github.com/JanGerardi" target="_blank">
+                <img
                 class="github-icon"
                 src="./assets/image/contact_icons/github.png"
                 alt="GitHub Icon"
                 onmouseover="this.src='./assets/image/contact_icons/github_hover.png';"
                 onmouseout="this.src='./assets/image/contact_icons/github.png';"
-            />
-            <img
-                class="mail-icon"
-                src="./assets/image/contact_icons/mail.png"
-                alt="Mail Icon"
-                onmouseover="this.src='./assets/image/contact_icons/mail_hover.png';"
-                onmouseout="this.src='./assets/image/contact_icons/mail.png';"
                 />
+            </a>
+            <a href="mailto:jan_gerardi@outlook.com">
+                <img
+                    class="mail-icon"
+                    src="./assets/image/contact_icons/mail.png"
+                    alt="Mail Icon"
+                    onmouseover="this.src='./assets/image/contact_icons/mail_hover.png';"
+                    onmouseout="this.src='./assets/image/contact_icons/mail.png';"
+                />
+            </a>
         </div>
         <div class="logo-head">
             <img class="logo" src="./assets/image/logo.png" alt="Logo">
@@ -22,25 +26,46 @@
         </div>
         <div id="menu-bar">
             <button>EN</button>
-            <div class="burger-menu">&#9776;</div>
+            <div class="burger-menu" (click)="openMenu()">&#9776;</div>
         </div>
     </div>
-    <div class="menu">
+    <div class="menu" [ngStyle]="{ display: isMenuOpen ? 'flex' : 'none' }">
         <div class="top-menu">
             <p>Menu</p>
             <img
             class="close-icon"
             src="./assets/image/close.png"
+            (click)="closeMenu()"
             onmouseover="this.src='./assets/image/close_hover.png';"
             onmouseout="this.src='./assets/image/close.png';"
             />
         </div>
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skillset</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#about-me" (click)="onMenuItemClick()">About Me</a></li>
+            <li><a href="#skills" (click)="onMenuItemClick()">Skillset</a></li>
+            <li><a href="#portfolio" (click)="onMenuItemClick()">Portfolio</a></li>
+            <li><a href="#references" (click)="onMenuItemClick()">References</a></li>
+            <li><a href="#contact" (click)="onMenuItemClick()">Contact me</a></li>
         </ul>
+        <div class="contact-bar-menu">
+            <a href="https://github.com/JanGerardi" target="_blank">
+                <img
+                    class="github-icon"
+                    src="./assets/image/contact_icons/github_black.png"
+                    alt="GitHub Icon"
+                    onmouseover="this.src='./assets/image/contact_icons/github_hover.png';"
+                    onmouseout="this.src='./assets/image/contact_icons/github_black.png';"
+                />
+            </a>
+            <a href="mailto:jan_gerardi@outlook.com">
+                <img
+                    class="mail-icon"
+                    src="./assets/image/contact_icons/mail_black.png"
+                    alt="Mail Icon"
+                    onmouseover="this.src='./assets/image/contact_icons/mail_hover.png';"
+                    onmouseout="this.src='./assets/image/contact_icons/mail_black.png';"
+                />
+            </a>
+        </div>
     </div>
 </header>
