@@ -1,11 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrl: './about-me.component.scss',
 })
+
 export class AboutMeComponent {
+
+  isOverlayOpen = false;
+
+  showOverlay() {
+    this.isOverlayOpen = true;
+  }
+
+  hideOverlay() {
+    this.isOverlayOpen = false;
+  }
 
 }

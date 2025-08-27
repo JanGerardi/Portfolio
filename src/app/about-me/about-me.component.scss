@@ -4,18 +4,21 @@ section {
 
 #content {
     width: 100%;
-    height: 100dvh;
+    height: auto;
     max-width: 1920px;
-    max-height: 1080px;
-    padding: 0px 100px;
+    padding: 50px 100px;
     display: flex;
 
     @media(max-width: 1415px) {
-        padding: 0px 50px;
+        padding: 50px 50px;
     }
 
     @media(max-width: 1180px) {
-        padding: 0px 30px;
+        padding: 50px 30px;
+    }
+
+    @media(max-height: 740px) {
+        padding-top: 30px 30px;
     }
 
     .about-content {
@@ -23,58 +26,48 @@ section {
         flex-direction: column;
         width: 100%;
 
-        .head {
-            height: 12dvh;
-            display: flex;
-            align-items: center;
-            font-size: 32px;
-            color: rgb(34, 34, 34);
-
-            .logo {
-                height: 50px;
-                margin-right: -7px;
-            }
-        }
-
         .section-content {
             width: 100%;
-            height: 88dvh;
             padding-left: 50px;
-            padding-top: 50px;
             display: flex;
-            justify-content: space-between;
+            align-items: center;
 
             @media(max-width: 1150px) {
-                padding-top: 0px;
+                flex-direction: column;
+                align-items: center;
+
+                .about-background {
+                    align-self: flex-start;
+                }
             }
 
             @media(max-width: 850px) {
                 padding: 0px;
             }
 
-            .about-background {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
+            h2 {
+                font-size: 64px;
+                position: absolute;
+                top: 0;
+                right: 0;
 
-                @media(max-width: 1150px) {
-                    justify-content: flex-end;
+                @media(max-width: 950px) {
+                    font-size: 54px;
                 }
+
+                @media(max-width: 850px) {
+                    position: relative;
+                    display: flex;
+                    align-self: flex-end;
+                    padding-bottom: 50px;
+
+                }
+            }
+
+            .about-background {
 
                 @media(max-width: 450px) {
                     margin: 0px -10px;
-                }
-
-                h2 {
-                    font-size: 64px;
-
-                    @media(max-width: 950px) {
-                        font-size: 54px;
-                    }
-
-                    @media(max-width: 760px) {
-                        font-size: 48px;
-                    }
                 }
 
                 img {
@@ -83,17 +76,11 @@ section {
                     transform: scaleX(-1);
 
                     @media(max-width: 1150px) {
-                        position: absolute;
-                        top: 10%;
-                        left: 0;
                         width: 480px;
                         height: 600px;
                     }
 
                     @media(max-width: 950px) {
-                        position: absolute;
-                        top: 10%;
-                        left: 0;
                         width: 400px;
                         height: 500px;
                     }
@@ -123,14 +110,15 @@ section {
             .about-container {
                 width: 700px;
                 background-color: rgb(34, 34, 34);
-                position: absolute;
                 color: rgb(246, 246, 228);
                 z-index: 99;
-                top: calc(50% - 50px);
-                left: 65%;
-                transform: translate(-50%, -50%);
                 display: flex;
                 flex-direction: column;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                margin-right: 50px;
 
                 @media(max-width: 1330px) {
                     width: 600px;
@@ -141,27 +129,40 @@ section {
                 }
 
                 @media(max-width: 1150px) {
-                    top: 75%;
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    transform: none;
+                    width: 700px;
+                    margin: 0;
+                    margin-top: -70px;
                 }
 
                 @media(max-width: 950px) {
+                    width: 600px;
+                }
+
+                @media(max-width: 750px) {
+                    width: 500px;
+                    margin-top: -50px;
+                }
+
+                @media(max-width: 650px) {
+                    margin-top: -30px;
+                }
+
+                @media(max-width: 650px) {
                     width: 400px;
                 }
 
-                @media(max-width: 550px) {
-                    top: 70%;
-                    left: 55%;
+                @media(max-width: 500px) {
                     width: 350px;
                 }
 
-                @media(max-width: 450px) {
-                    left: 50%;
-                    width: 300px;
+                @media(max-width: 400px) {
+                    width: 270px;
                 }
 
-                @media(max-width: 380px) {
-                    width: 100%;
-                }
 
                 p {
                     padding: 35px;
@@ -179,11 +180,14 @@ section {
                     img {
                         height: 32px;
                         animation: bounce 2.5s linear infinite;
+
+                        &:hover {
+                            animation-play-state: paused;
+                        }
                     }
 
-                    button {
+                    .button-link {
                         color: rgb(246, 246, 228);
-                        ;
                         width: 140px;
                         height: 40px;
                         background: none;
@@ -192,7 +196,16 @@ section {
                         border-style: solid;
                         border-radius: 20px;
                         border-width: 1px;
-                        font-size: 16px;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @media(max-height: 740px) {
+                            width: 115px;
+                            height: 35px;
+                            font-size: 16px;
+                        }
 
                         &:hover {
                             background-color: rgb(255, 131, 79);
@@ -229,6 +242,96 @@ section {
             height: 10px;
             background-color: rgb(34, 34, 34);
             border-radius: 50%;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 380px;
+    right: 150px;
+    padding: 30px;
+    background-color: rgb(103, 154, 172);
+    border-radius: 5px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 999;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    @media(max-width: 1150px) {
+        top: 410px;
+        right: 70px;
+        transform: translateY(-100px);
+    }
+
+    @media(max-width: 950px) {
+        top: 320px;
+        right: 40px;
+    }
+
+    @media(max-width: 850px) {
+        top: 430px;
+        right: 20px;
+    }
+
+    @media(max-width: 750px) {
+        top: 480px;
+    }
+
+    @media(max-width: 650px) {
+        top: 520px;
+    }
+
+    @media(max-width: 550px) {
+        top: 460px;
+    }
+
+    @media(max-width: 500px) {
+        top: 480px;
+    }
+
+    @media(max-width: 450px) {
+        top: 420px;
+    }
+
+    @media(max-width: 400px) {
+        top: 460px;
+    }
+
+    @media(max-width: 340px) {
+        right: 10px;
+    }
+
+
+    p {
+        font-size: 24px;
+        color: rgb(246, 246, 228);
+        padding-bottom: 20px;
+    }
+
+    ul {
+        font-size: 16px;
+        color: rgb(246, 246, 228);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
     }
 }
