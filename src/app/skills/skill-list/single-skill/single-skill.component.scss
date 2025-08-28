@@ -16,11 +16,7 @@
         padding: 30px 20px;
     }
 
-    @media(max-width: 680px) {
-        padding: 30px 10px;
-    }
-
-    @media(max-width: 420px) {
+    @media(max-width: 590px) {
         font-size: 16px;
     }
 
@@ -34,12 +30,12 @@
             width: 82px;
         }
 
-        @media(max-width: 830px) {
+        @media(max-width: 720px) {
             height: 70px;
             width: 70px;
         }
 
-        @media(max-width: 420px) {
+        @media(max-width: 590px) {
             height: 60px;
             width: 60px;
         }

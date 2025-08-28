@@ -19,5 +19,4 @@ export class AboutMeComponent {
   hideOverlay() {
     this.isOverlayOpen = false;
   }
-
 }
