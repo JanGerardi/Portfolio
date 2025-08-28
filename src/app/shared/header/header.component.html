@@ -29,7 +29,7 @@
             <div class="burger-menu" (click)="openMenu()">&#9776;</div>
         </div>
     </div>
-    <div class="menu" [ngStyle]="{ display: isMenuOpen ? 'flex' : 'none' }">
+    <div class="menu" [class.open]="isMenuOpen">
         <div class="top-menu">
             <p>Menu</p>
             <img
