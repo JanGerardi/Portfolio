@@ -9,30 +9,30 @@
                     </div>
                 </div>
                 <div class="bottom-content">
-                    <div class="study-icon" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()">
-                        <img src=".\assets\image\symbol_orange.png">
-                        <img src=".\assets\image\study_icon.png">
+                    <div class="study-icon">
+                        <img class="study-img" src=".\assets\image\study_icon.png" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()">
+                        <img class="rotating-img" src=".\assets\image\symbol_orange.png">
+                    </div>
+                    <div class="overlay" [class.open]="isOverlayOpen">
+                        <p>Don't see the skill you<br>are looking for?</p>
+                        <p>Feel free to contact me. I look forward to<br>expanding on my previous knowledge.<br>Especially in:</p>
+                        <div class="skills">
+                            <div>
+                                <img src="./assets/image/skills/css_icon.png">
+                                <p>CSS</p>
+                            </div>
+                            <div>
+                                <img src="./assets/image/skills/scrum_icon.png">
+                                <p>Scrum</p>
+                            </div>
+                            <div>
+                                <img src="./assets/image/skills/html_icon.png">
+                                <p>HTML</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-list">
                         <app-skill-list></app-skill-list>
-                    </div>
-                </div>
-                <div class="overlay" [class.open]="isOverlayOpen">
-                    <p>Don't see the skill you<br>are looking for?</p>
-                    <p>Feel free to contact me. I look forward to<br>expanding on my previous knowledge.<br>Especially in:</p>
-                    <div class="skills">
-                        <div>
-                            <img src="./assets/image/skills/css_icon.png">
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="./assets/image/skills/scrum_icon.png">
-                            <p>Scrum</p>
-                        </div>
-                        <div>
-                            <img src="./assets/image/skills/html_icon.png">
-                            <p>HTML</p>
-                        </div>
                     </div>
                 </div>
             </div>
