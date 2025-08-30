@@ -144,8 +144,8 @@ section {
                     z-index: 999;
                     flex-direction: column;
                     text-align: center;
-                    opacity: 1;
-                    transform: translateY(0px);
+                    opacity: 0;
+                    transform: translateY(100px);
                     pointer-events: none;
                     transition: opacity 0.3s ease, transform 0.3s ease;
 
@@ -169,6 +169,7 @@ section {
                         margin: 0;
                         top: 70px;
                         left: 40px;
+                        transform: translateX(-100px);
                     }
 
                     @media(max-width: 460px) {

@@ -1,10 +1,6 @@
 <section id="portfolio">
     <div id="content">
         <div class="portfolio-content">
-            <div class="head">
-                <img class="logo" src=".\assets\image\logo.png">
-                <p>erardi</p>
-            </div>
             <div class="section-content">
                 <div class="top-content">
                     <h2>My work</h2>
@@ -13,38 +9,38 @@
                     </div>
                 </div>
                 <div class="bottom-content">
-                    <div class="project-window">
-                        <img src=".\assets\image\symbol_orange.png" alt="">
-                        <img src=".\assets\image\join.png" alt="">
+                    <div class="project-window" [class.el-pollo-loco]="projects[currentIndex].title === 'El Pollo Loco'">
+                        <img src=".\assets\image\symbol_orange.png">
+                        <img [src]="projects[currentIndex].image">
                     </div>
                     <div class="project-interactions">
                         <div class="project-container">
                             <div class="top-project-container">
-                                <h3>Join</h3>
-                                <img src="./assets/image/check.png" alt="">
+                                <h3>{{projects[currentIndex].title}}</h3>
+                                <img src="./assets/image/check.png">
                             </div>
-                            <p class="project-skill">HTML | CSS | Firebase | Angular | TypeScript</p>
-                            <p>Task manager inspired by the Kanban System. Create and organize tasks using drag amd drop functions, assign users and categories.</p>
-                            <div class="github-buttons">
-                                <button>GitHub</button>
-                                <button>Live Test</button>
+                            <p class="project-skill">{{projects[currentIndex].skills}}</p>
+                            <p>{{projects[currentIndex].description}}</p>
+                            <div class="github">
+                                <a [href]="projects[currentIndex].github" target="_blank">GitHub</a>
+                                <a [href]="projects[currentIndex].live" target="_blank">Live Test</a>
                             </div>
                         </div>
                         <div class="switch-buttons">
-                            <button><< Previous project</button>
-                            <button>Next project >></button>
+                            <button (click)="previousProject()"><< Previous project</button>
+                            <button (click)="nextProject()">Next project >></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="page-indicator">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="#hero"></a>
+            <a href="#about-me"></a>
+            <a href="#skills"></a>
             <div></div>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="#references"></a>
+            <a href="#contact"></a>
         </div>
     </div> 
 </section>
