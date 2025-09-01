@@ -33,6 +33,10 @@ section{
         padding-left: 50px;
         display: flex;
 
+        @media(max-width: 1040px) {
+            padding-left: 0;
+        }
+
         @media(max-width: 990px){
             flex-direction: column;
         }
