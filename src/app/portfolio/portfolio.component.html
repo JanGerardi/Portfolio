@@ -17,7 +17,7 @@
                         <div class="project-container">
                             <div class="top-project-container">
                                 <h3>{{projects[currentIndex].title}}</h3>
-                                <img src="./assets/image/check.png">
+                                <img src="./assets/image/check.png" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()">
                             </div>
                             <p class="project-skill">{{projects[currentIndex].skills}}</p>
                             <p>{{projects[currentIndex].description}}</p>
@@ -29,6 +29,9 @@
                         <div class="switch-buttons">
                             <button (click)="previousProject()"><< Previous project</button>
                             <button (click)="nextProject()">Next project >></button>
+                        </div>
+                        <div class="overlay" [class.open]="isOverlayOpen">
+                            <p>{{projects[currentIndex].development}}</p>
                         </div>
                     </div>
                 </div>
