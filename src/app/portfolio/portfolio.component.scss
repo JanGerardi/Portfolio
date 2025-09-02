@@ -68,7 +68,7 @@ section{
                     }
 
                     @media(max-width: 400px) {
-                        font-size: 28px;
+                        font-size: 30px;
                     }
                 }
 
@@ -206,11 +206,19 @@ section{
                             padding: 30px;
                         }
 
+                        @media(max-width: 1250px) {
+                            padding: 30px 20px;
+                        }
+
                         .top-project-container{
                             font-size: 24px;
                             display: flex;
                             justify-content: space-between;
                             padding-bottom: 20px;
+
+                            @media(max-width: 350px) {
+                                font-size: 22px;
+                            }
 
                             img{
                                 height: 30px;
@@ -231,6 +239,11 @@ section{
                             padding-top: 50px;
                             display: flex;
                             gap: 40px;
+
+                            @media(max-width: 430px) {
+                                justify-content: space-between;
+                                gap: 20px;
+                            }
 
                             a{
                                 color: rgb(246, 246, 228);
@@ -270,7 +283,7 @@ section{
                             }
 
                             &:hover{
-                                color: rgb(255, 131, 79);;
+                                color: rgb(255, 131, 79);
                             }
                         }
 
@@ -286,7 +299,7 @@ section{
                             }
 
                             &:hover{
-                                color: rgb(255, 131, 79);;
+                                color: rgb(255, 131, 79);
                             }
                         }
                     }
