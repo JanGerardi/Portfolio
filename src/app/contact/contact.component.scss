@@ -4,18 +4,18 @@ section{
 
 #content{
     width: 100%;
-    min-height: 85dvh;
+    height: auto;
     max-width: 1920px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 50px 100px;
     display: flex;
+    color: rgb(246, 246, 228);
 
     @media(max-width: 1415px) {
-        padding: 0px 50px;
+        padding: 50px 50px;
     }
 
     @media(max-width: 1180px) {
-        padding: 0px 30px;
+        padding: 50px 30px;
     }
 
     .contact-content{
@@ -23,125 +23,137 @@ section{
         flex-direction: column;
         width: 100%;
 
-        .head{
-            height: 12dvh;
+        .section-content{
+            width: 100%;
+            padding-left: 50px;
             display: flex;
-            align-items: center;
-            font-size: 32px;
-            color: rgb(246, 246, 228);
+            justify-content: center;
+            align-items: flex-end;
 
-            .logo {
-                height: 50px;
-                margin-right: -7px;
-            }
-        }
-    }
-
-    .section-content{
-        width: 100%;
-        height: 100%;
-        padding-left: 50px;
-        display: flex;
-
-        @media(max-width: 1150px) {
-            padding-top: 0px;
-        }
-
-        @media(max-width: 850px) {
-            padding: 0px;
-        }
-
-        @media(max-width: 850px) {
-            flex-direction: column;
-        }
-
-        .left-content{
-            width: 45%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            padding-right: 50px;
-
-            @media(max-width: 1190px) {
-                width: 50%;
+            @media(max-width: 1040px) {
+                padding-left: 0;
             }
 
             @media(max-width: 850px) {
-                width: 100%;
-                padding: 0;
+                flex-direction: column;
             }
 
-            .question{
-                font-size: 28px;
-                color: rgb(255, 131, 79);
-                font-weight: 700;
-                padding-bottom: 20px;
+            .left-content{
+                width: 45%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-right: 50px;
+
+                @media(max-width: 1250px) {
+                    width: 50%;
+                }
+
+                @media(max-width: 850px) {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .question{
+                    font-size: 26px;
+                    color: rgb(255, 131, 79);
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                }
+
+                h2{
+                    font-size: 64px;
+                    color: orange;
+                    padding-bottom: 50px;
+                    font-family: "Eczar", sans-serif;
+                    line-height: 1.2;
+
+                    @media(max-width: 1450px) {
+                        font-size: 54px;
+                    }
+
+                    @media(max-width: 1000px) {
+                        font-size: 48px;
+                    }
+
+                    @media(max-width: 910px) {
+                        font-size: 42px;
+                    }
+
+                    @media(max-width: 400px) {
+                        font-size: 36px;
+                    }
+
+                    @media(max-width: 340px) {
+                        font-size: 30px;
+                    }
+                }
             }
 
-            p{
-                font-size: 20px;
+            .right-content{
+                width: 55%;
                 color: rgb(246, 246, 228);
-                padding-right: 10px;
+                padding: 0 50px;
+                margin-top: 100px;
+
+                @media(max-width: 1250px) {
+                    width: 50%;
+                }
+
+                @media(max-width: 850px) {
+                    width: 100%;
+                    padding: 0 20px;
+                    margin-top: 50px;
+                }
 
                 @media(max-width: 550px) {
                     padding: 0;
                 }
-            }
 
-            h2{
-                font-size: 64px;
-                color: orange;
-                padding-bottom: 50px;
+                .top-formular{
+                    display: flex;
+                    gap: 40px;
+                    font-size: 20px;
+                    width: 100%;
 
-                @media(max-width: 1050px) {
-                    font-size: 54px;
-                }
-
-                @media(max-width: 920px) {
-                    font-size: 48px;
-                }
-            }
-        }
-
-        .right-content{
-            width: 55%;
-            color: rgb(246, 246, 228);
-            padding: 40px;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-
-            @media(max-width: 1190px) {
-                width: 50%;
-            }
-
-            @media(max-width: 850px) {
-                position: relative;
-                width: 100%;
-            }
-
-            @media(max-width: 810px) {
-                padding: 40px 0;
-            }
-
-            .top-formular{
-                display: flex;
-                gap: 40px;
-                font-size: 20px;
-                width: 100%;
-
-                @media(max-width: 1190px) {
-                    flex-direction: column;
-                }
-
-                div{
-                    width: 50%;
-
-                    @media(max-width: 1190px) {
-                        width: 100%;
+                    @media(max-width: 1250px) {
+                        flex-direction: column;
                     }
 
+                    div{
+                        width: 50%;
+
+                        @media(max-width: 1250px) {
+                            width: 100%;
+                        }
+
+                        h3{
+                            font-size: 22px;
+                            padding-left: 10px;
+                        }
+
+                        input{
+                            width: 100%;
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid;
+                            border-color: rgb(255, 131, 79);
+                            margin-top: 20px;
+                            padding: 10px;
+                            outline: none;
+                            caret-color: rgb(246, 246, 228);
+                            color: rgb(246, 246, 228);
+                        }
+                    }
+                }
+
+                .center-formular{
+                    font-size: 20px;
+                    width: 100%;
+                    padding-top: 40px;
+
                     h3{
+                        font-size: 22px;
                         padding-left: 10px;
                     }
 
@@ -158,86 +170,63 @@ section{
                         color: rgb(246, 246, 228);
                     }
                 }
-            }
 
-            .center-formular{
-                font-size: 20px;
-                width: 100%;
-                padding-top: 40px;
+                .privacy{
+                    display: flex;
+                    padding-top: 50px;
+                    gap: 10px;
 
-                h3{
-                    padding-left: 10px;
+                    a{
+                        color: rgb(255, 131, 79);
+                    }
+
+                    input[type="checkbox"] {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+
+                        width: 16px;
+                        height: 16px;
+                        border: 2px solid rgb(255, 131, 79);
+                        border-radius: 2px;
+                        background-color: transparent;
+                        cursor: pointer;
+                        position: relative;
+                    }
+
+                    input[type="checkbox"]:checked::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 35%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        width: 4px;
+                        height: 8px;
+                        border: solid rgb(255, 131, 79);
+                        border-width: 0 2px 2px 0;
+                    }
                 }
 
-                input{
+                .button-formular{
                     width: 100%;
-                    background: none;
-                    border: none;
-                    border-bottom: 1px solid;
-                    border-color: rgb(255, 131, 79);
-                    margin-top: 20px;
-                    padding: 10px;
-                    outline: none;
-                    caret-color: rgb(246, 246, 228);
-                    color: rgb(246, 246, 228);
-                }
-            }
+                    padding-top: 50px;
+                    display: flex;
+                    justify-content: center;
 
-            .privacy{
-                display: flex;
-                padding-top: 50px;
-                gap: 10px;
+                    button{
+                        color: rgb(246, 246, 228);;
+                        width: 140px;
+                        height: 40px;
+                        background: none;
+                        border-color: rgb(246, 246, 228);;
+                        border-style: solid;
+                        border-radius: 20px;
+                        border-width: 1px;
+                        font-size: 16px;
 
-                a{
-                    color: rgb(255, 131, 79);
-                }
-
-                input[type="checkbox"] {
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-
-                    width: 16px;
-                    height: 16px;
-                    border: 2px solid rgb(255, 131, 79);
-                    border-radius: 2px;
-                    background-color: transparent;
-                    cursor: pointer;
-                    position: relative;
-                }
-
-                input[type="checkbox"]:checked::before {
-                    content: "";
-                    position: absolute;
-                    left: 50%;
-                    top: 35%;
-                    transform: translate(-50%, -50%) rotate(45deg);
-                    width: 4px;
-                    height: 8px;
-                    border: solid rgb(255, 131, 79);
-                    border-width: 0 2px 2px 0;
-                }
-            }
-
-            .button-formular{
-                width: 100%;
-                padding-top: 50px;
-                display: flex;
-                justify-content: center;
-
-                button{
-                    color: rgb(246, 246, 228);;
-                    width: 140px;
-                    height: 40px;
-                    background: none;
-                    border-color: rgb(246, 246, 228);;
-                    border-style: solid;
-                    border-radius: 20px;
-                    border-width: 1px;
-                    font-size: 16px;
-
-                    &:hover{
-                        background-color: rgb(255, 131, 79);
+                        &:hover{
+                            background-color: rgb(255, 131, 79);
+                        }
                     }
                 }
             }
