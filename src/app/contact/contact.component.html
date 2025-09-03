@@ -8,24 +8,33 @@
                     <p>With my combined expertise in frontend development and a strong foundation in project management, I bring real value to your projects. I work in a solution-oriented and collaborative way, always keeping user needs and project goals in focus. I'm especially motivated by the opportunity to actively contribute to the development and coordination of digital products—whether through hands-on coding or by facilitating communication between teams and stakeholders. My goal is not just to complete tasks, but to drive meaningful progress within the company.</p>
                 </div>
                 <div class="right-content">
-                    <form onsubmit="return sendMail(event)">
+                    <form (submit)="sendMail($event, nameInput, emailInput, messageInput, checkbox)" autocomplete="off" novalidate>
                         <div class="top-formular">
                             <div>
                                 <h3>What's your name?</h3>
-                                <input type="text" name="name" required placeholder="Enter your Name">
+                                <input #nameInput type="text" name="name"
+                                [placeholder]="nameError ? 'Please enter your Name.' : 'Enter your Name'"
+                                [class.error]="nameError" (focus)="nameError = false">
                             </div>
                             <div>
                                 <h3>What's your E-Mail?</h3>
-                                <input type="email" name="email" required placeholder="youremail@email.com">
+                                <input #emailInput type="email" name="email"
+                                [placeholder]="emailError ? 'Please enter your E-Mail.' : 'youremail@email.com'"
+                                [class.error]="emailError" (focus)="emailError = false">
                             </div>
                         </div>
                         <div class="center-formular">
                             <h3>How can I help you?</h3>
-                            <input name="message" required placeholder="Hello Jan, I am interested in ...">
+                            <textarea #messageInput name="message" rows="1"
+                            [placeholder]="textError ? 'Please enter your Message.' : 'Hello Jan, I am interested in ...'"
+                            [class.error]="textError" (focus)="textError = false"></textarea>
                         </div>
                         <div class="privacy">
-                            <input type="checkbox" id="checkbox" required>
-                            <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data.</p>
+                            <div class="checkbox">
+                                <input #checkbox type="checkbox" id="checkbox" [class.error]="privacyError" (change)="privacyError = false">
+                                <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data.</p>
+                            </div>
+                            <p [class.visible]="privacyError" class="error-message">Please agree to the privacy policy.</p>
                         </div>
                         <div class="button-formular">
                             <button type="submit">Drop a Line</button>
@@ -35,13 +44,12 @@
             </div>
         </div>
         <div class="page-indicator">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="#hero"></a>
+            <a href="#about-me"></a>
+            <a href="#skills"></a>
+            <a href="#portfolio"></a>
+            <a href="#references"></a>
             <div></div>
         </div>
     </div>
 </section>
-

@@ -1,39 +1,52 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
+  nameError = false;
+  emailError = false;
+  textError = false;
+  privacyError = false;
 
-    sendMail(event: Event): boolean {
+  sendMail(event: Event, nameInput: HTMLInputElement, emailInput: HTMLInputElement, messageInput: HTMLTextAreaElement, checkbox: HTMLInputElement) {
     event.preventDefault();
 
-    const nameInput = document.querySelector('input[name="name"]') as HTMLInputElement;
-    const emailInput = document.querySelector('input[name="email"]') as HTMLInputElement;
-    const messageInput = document.querySelector('textarea[name="message"]') as HTMLTextAreaElement;
-    const checkbox = document.getElementById('checkbox') as HTMLInputElement;
+    this.nameError = false;
+    this.emailError = false;
+    this.textError = false;
+    this.privacyError = false;
 
-    const name = nameInput.value;
-    const email = emailInput.value;
-    const message = messageInput.value;
-    const isChecked = checkbox.checked;
-
-    if (!isChecked) {
-      alert('Please agree to the privacy policy.');
-      return false;
+    if (!nameInput.value.trim()) {
+      this.nameError = true;
+    }
+    if (!emailInput.value.trim() || !this.validateEmail(emailInput.value)) {
+      this.emailError = true;
+    }
+    if (!messageInput.value.trim()) {
+      this.textError = true;
+    }
+    if (!checkbox.checked) {
+      this.privacyError = true;
     }
 
-    const mailto = `mailto:jan_gerardi@outlook.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${name} (${email})`;
-    window.location.href = mailto;
+    if (this.nameError || this.emailError || this.textError || this.privacyError) {
+      return;
+    }
 
-    // Formular zurücksetzen
-    const form = document.querySelector('form') as HTMLFormElement;
-    form.reset();
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+    checkbox.checked = false;
+  }
 
-    return false;
+  private validateEmail(email: string): boolean {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
   }
 }
