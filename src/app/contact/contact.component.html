@@ -11,23 +11,23 @@
                     <form (submit)="sendMail($event, nameInput, emailInput, messageInput, checkbox)" autocomplete="off" novalidate>
                         <div class="top-formular">
                             <div>
-                                <h3>What's your name?</h3>
+                                <h3 [class.focused]="nameFocused">What's your name?</h3>
                                 <input #nameInput type="text" name="name"
                                 [placeholder]="nameError ? 'Please enter your Name.' : 'Enter your Name'"
-                                [class.error]="nameError" (focus)="nameError = false">
+                                [class.error]="nameError" (focus)="nameError = false; nameFocused = true" (blur)="nameFocused = false">
                             </div>
                             <div>
-                                <h3>What's your E-Mail?</h3>
+                                <h3 [class.focused]="emailFocused">What's your E-Mail?</h3>
                                 <input #emailInput type="email" name="email"
                                 [placeholder]="emailError ? 'Please enter your E-Mail.' : 'youremail@email.com'"
-                                [class.error]="emailError" (focus)="emailError = false">
+                                [class.error]="emailError" (focus)="emailError = false; emailFocused = true" (blur)="emailFocused = false">
                             </div>
                         </div>
                         <div class="center-formular">
-                            <h3>How can I help you?</h3>
+                            <h3 [class.focused]="messageFocused">How can I help you?</h3>
                             <textarea #messageInput name="message" rows="1"
                             [placeholder]="textError ? 'Please enter your Message.' : 'Hello Jan, I am interested in ...'"
-                            [class.error]="textError" (focus)="textError = false"></textarea>
+                            [class.error]="textError" (focus)="textError = false; messageFocused = true" (blur)="messageFocused = false"></textarea>
                         </div>
                         <div class="privacy">
                             <div class="checkbox">

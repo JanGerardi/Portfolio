@@ -13,6 +13,9 @@ export class ContactComponent {
   emailError = false;
   textError = false;
   privacyError = false;
+  nameFocused = false;
+  emailFocused = false;
+  messageFocused = false;
 
   sendMail(event: Event, nameInput: HTMLInputElement, emailInput: HTMLInputElement, messageInput: HTMLTextAreaElement, checkbox: HTMLInputElement) {
     event.preventDefault();

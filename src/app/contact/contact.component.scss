@@ -132,6 +132,10 @@ section{
                             padding-left: 10px;
                         }
 
+                        h3.focused {
+                            color: rgb(255, 131, 79);
+                        }
+
                         input{
                             width: 100%;
                             background: none;
@@ -156,6 +160,10 @@ section{
                     h3{
                         font-size: 22px;
                         padding-left: 10px;
+                    }
+
+                    h3.focused {
+                        color: rgb(255, 131, 79);
                     }
 
                     textarea{
