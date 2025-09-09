@@ -337,11 +337,33 @@ section {
         padding: 30px 20px;
     }
 
-
-    p {
-        font-size: 24px;
-        color: rgb(246, 246, 228);
+    .top-overlay{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        color: rgb(103, 154, 172);
+        gap: 30px;
         padding-bottom: 20px;
+
+        p {
+            font-size: 24px;
+            color: rgb(246, 246, 228);
+
+            @media(max-width: 365px) {
+                font-size: 20px;
+            }
+        }
+
+        img{
+            height: 20px;
+            cursor: pointer;
+            display: none;
+            
+            @media(max-width: 1024px) {
+                display: block;
+            }
+        }
     }
 
     ul {

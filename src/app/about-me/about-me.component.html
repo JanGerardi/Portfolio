@@ -10,11 +10,18 @@
                     <p>Hey there ,I'm Jan. I’m Jan, passionate about IT and especially enjoying the creative side of coding with HTML and SCSS, turning ideas into visually engaging and functional experiences. I enjoy leading teams, tackling challenges, and continuously learning new technologies while contributing to innovative projects.</p>
                     <div class="about-more">
                         <a href="#contact" class="button-link">Let's Talk</a>
-                        <img src=".\assets\image\emoji.png" alt="Emoji" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()">
+                        <img src=".\assets\image\emoji.png" alt="Emoji" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()" (click)="showOverlayMobile()">
                     </div>
                 </div>
                 <div class="overlay" [class.open]="isOverlayOpen">
-                    <p>More about me</p>
+                    <div class="top-overlay">
+                        <p>More about me</p>
+                        <img
+                            class="close-icon"
+                            src="./assets/image/close_mobile.png"
+                            (click)="hideOverlay()"
+                            />
+                    </div>
                     <ul>
                         <li><img src=".\assets\image\check_circle.png" alt="">Team player</li>
                         <li><img src=".\assets\image\check_circle.png" alt="">Continuously learning</li>

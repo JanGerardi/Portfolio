@@ -10,11 +10,18 @@
                 </div>
                 <div class="bottom-content">
                     <div class="study-icon">
-                        <img class="study-img" src=".\assets\image\study_icon.png" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()">
+                        <img class="study-img" src=".\assets\image\study_icon.png" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()"  (click)="showOverlayMobile()">
                         <img class="rotating-img" src=".\assets\image\symbol_orange.png">
                     </div>
                     <div class="overlay" [class.open]="isOverlayOpen">
-                        <p>Don't see the skill you<br>are looking for?</p>
+                        <div class="top-overlay">
+                            <img
+                            class="close-icon"
+                            src="./assets/image/close_mobile.png"
+                            (click)="hideOverlay()"
+                            />
+                        </div>
+                        <p class="top-line">Don't see the skill you<br>are looking for?</p>
                         <p>Feel free to contact me. I look forward to expanding on my previous knowledge.<br>Especially in:</p>
                         <div class="skills">
                             <div>

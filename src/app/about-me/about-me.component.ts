@@ -19,4 +19,10 @@ export class AboutMeComponent {
   hideOverlay() {
     this.isOverlayOpen = false;
   }
+
+  showOverlayMobile() {
+    if (window.innerWidth <= 1024) {
+      this.showOverlay();
+    }
+  }
 }
