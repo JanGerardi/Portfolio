@@ -32,7 +32,7 @@
                         <div class="privacy">
                             <div class="checkbox">
                                 <input #checkbox type="checkbox" id="checkbox" [class.error]="privacyError" (change)="privacyError = false">
-                                <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data.</p>
+                                <span>I've read the <a routerLink="privacy-policy">privacy policy</a> and agree to the processing of my data.</span>
                             </div>
                             <p [class.visible]="privacyError" class="error-message">Please agree to the privacy policy.</p>
                         </div>
