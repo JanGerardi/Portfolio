@@ -10,7 +10,7 @@
                 onmouseout="this.src='./assets/image/contact_icons/github.png';"
                 />
             </a>
-            <a href="mailto:jan_gerardi@outlook.com" target="_blank">
+            <a href="#contact">
                 <img
                     class="mail-icon"
                     src="./assets/image/contact_icons/mail.png"
@@ -31,7 +31,7 @@
     </div>
     <div class="menu" [class.open]="isMenuOpen">
         <div class="top-menu">
-            <p>Menu</p>
+            <p>{{ 'header.menu-title' | translate }}</p>
             <img
             class="close-icon"
             src="./assets/image/close.png"
@@ -41,11 +41,11 @@
             />
         </div>
         <ul>
-            <li><a href="#about-me" (click)="onMenuItemClick()">About Me</a></li>
-            <li><a href="#skills" (click)="onMenuItemClick()">Skillset</a></li>
-            <li><a href="#portfolio" (click)="onMenuItemClick()">Portfolio</a></li>
-            <li><a href="#references" (click)="onMenuItemClick()">References</a></li>
-            <li><a href="#contact" (click)="onMenuItemClick()">Contact me</a></li>
+            <li><a href="#about-me" (click)="onMenuItemClick()">{{ 'header.section-1' | translate }}</a></li>
+            <li><a href="#skills" (click)="onMenuItemClick()">{{ 'header.section-2' | translate }}</a></li>
+            <li><a href="#portfolio" (click)="onMenuItemClick()">{{ 'header.section-3' | translate }}</a></li>
+            <li><a href="#references" (click)="onMenuItemClick()">{{ 'header.section-4' | translate }}</a></li>
+            <li><a href="#contact" (click)="onMenuItemClick()">{{ 'header.section-5' | translate }}</a></li>
         </ul>
         <div class="contact-bar-menu">
             <a href="https://github.com/JanGerardi" target="_blank">
@@ -57,7 +57,7 @@
                     onmouseout="this.src='./assets/image/contact_icons/github_black.png';"
                 />
             </a>
-            <a href="mailto:jan_gerardi@outlook.com" target="_blank">
+            <a href="#contact">
                 <img
                     class="mail-icon"
                     src="./assets/image/contact_icons/mail_black.png"

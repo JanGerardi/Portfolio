@@ -1,0 +1,13 @@
+{
+    "header": {
+        "menu-title": "Menu",
+        "section-1": "About Me",
+        "section-2": "Skillset",
+        "section-3": "Portfolio",
+        "section-4": "References",
+        "section-5": "Contact Me"
+    },
+    "hero":{
+
+    }
+}

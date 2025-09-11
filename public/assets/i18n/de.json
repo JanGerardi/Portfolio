@@ -1,0 +1,13 @@
+{
+        "header": {
+        "menu-title": "Menü",
+        "section-1": "Über mich",
+        "section-2": "Fähigkeiten",
+        "section-3": "Portfolio",
+        "section-4": "Referenzen",
+        "section-5": "Kontakt"
+    },
+    "hero":{
+        
+    }
+}
