@@ -8,35 +8,37 @@
                     <p>With my combined expertise in frontend development and a strong foundation in project management, I bring real value to your projects. I work in a solution-oriented and collaborative way, always keeping user needs and project goals in focus. I'm especially motivated by the opportunity to actively contribute to the development and coordination of digital products—whether through hands-on coding or by facilitating communication between teams and stakeholders. My goal is not just to complete tasks, but to drive meaningful progress within the company.</p>
                 </div>
                 <div class="right-content">
-                    <form (submit)="sendMail($event, nameInput, emailInput, messageInput, checkbox)" autocomplete="off" novalidate>
+                    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" autocomplete="off">
                         <div class="top-formular">
                             <div>
-                                <h3 [class.focused]="nameFocused">What's your name?</h3>
-                                <input #nameInput type="text" name="name"
+                                <label [class.focused]="nameFocused" for="name">What's your name?</label>
+                                <input [(ngModel)]="contactData.name" type="text" name="name"
                                 [placeholder]="nameError ? 'Please enter your Name.' : 'Enter your Name'"
-                                [class.error]="nameError" (focus)="nameError = false; nameFocused = true" (blur)="nameFocused = false">
+                                [class.error]="nameError" (focus)="nameError = false; nameFocused = true" (blur)="nameFocused = false" required>
                             </div>
                             <div>
-                                <h3 [class.focused]="emailFocused">What's your E-Mail?</h3>
-                                <input #emailInput type="email" name="email"
-                                [placeholder]="emailError ? 'Please enter your E-Mail.' : 'youremail@email.com'"
-                                [class.error]="emailError" (focus)="emailError = false; emailFocused = true" (blur)="emailFocused = false">
+                                <label [class.focused]="emailFocused" for="email">What's your E-Mail?</label>
+                                <input [(ngModel)]="contactData.email" type="email" name="email"
+                                [placeholder]="emailEmptyError ? 'Please enter your E-Mail.' : 'youremail@email.com'"
+                                [class.error]="emailEmptyError || emailInvalidError" (focus)="emailEmptyError = false; emailInvalidError = false; emailFocused = true" (blur)="emailFocused = false" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                                <p [class.visible]="emailInvalidError" class="error-message">Please enter a valid E-Mail address.</p>
                             </div>
                         </div>
                         <div class="center-formular">
-                            <h3 [class.focused]="messageFocused">How can I help you?</h3>
-                            <textarea #messageInput name="message" rows="1"
+                            <label [class.focused]="messageFocused" for="message">How can I help you?</label>
+                            <textarea [(ngModel)]="contactData.message" name="message" rows="1"
                             [placeholder]="textError ? 'Please enter your Message.' : 'Hello Jan, I am interested in ...'"
-                            [class.error]="textError" (focus)="textError = false; messageFocused = true" (blur)="messageFocused = false"></textarea>
+                            [class.error]="textError" (focus)="textError = false; messageFocused = true" (blur)="messageFocused = false" required></textarea>
                         </div>
                         <div class="privacy">
                             <div class="checkbox">
-                                <input #checkbox type="checkbox" id="checkbox" [class.error]="privacyError" (change)="privacyError = false">
+                                <input [(ngModel)]="contactData.privacy" type="checkbox" id="checkbox" name="privacy" [class.error]="privacyError" (change)="privacyError = false" required>
                                 <span>I've read the <a routerLink="privacy-policy">privacy policy</a> and agree to the processing of my data.</span>
                             </div>
                             <p [class.visible]="privacyError" class="error-message">Please agree to the privacy policy.</p>
                         </div>
                         <div class="button-formular">
+                            <p [class.visible]="submitSuccess" class="success-message">Your message has been sent successfully!</p>
                             <button type="submit">Drop a Line</button>
                         </div>
                     </form>

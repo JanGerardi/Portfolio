@@ -121,11 +121,11 @@ section{
 
                 .top-formular{
                     display: flex;
-                    gap: 40px;
+                    gap: 35px;
                     font-size: 20px;
                     width: 100%;
 
-                    @media(max-width: 1250px) {
+                    @media(max-width: 1310px) {
                         flex-direction: column;
                     }
 
@@ -136,12 +136,12 @@ section{
                             width: 100%;
                         }
 
-                        h3{
+                        label{
                             font-size: 22px;
                             padding-left: 10px;
                         }
 
-                        h3.focused {
+                        label.focused {
                             color: rgb(255, 131, 79);
                         }
 
@@ -159,6 +159,17 @@ section{
                             font-size: 16px;
                             font-family: inherit;
                         }
+
+                        .error-message {
+                            color: rgb(183, 0, 0);
+                            font-size: 14px;
+                            font-weight: 600;
+                            visibility: hidden;
+                        }
+
+                        .error-message.visible {
+                            visibility: visible;
+                        }
                     }
                 }
 
@@ -167,12 +178,12 @@ section{
                     width: 100%;
                     padding-top: 40px;
 
-                    h3{
+                    label{
                         font-size: 22px;
                         padding-left: 10px;
                     }
 
-                    h3.focused {
+                    label.focused {
                         color: rgb(255, 131, 79);
                     }
 
@@ -273,6 +284,8 @@ section{
                     padding-top: 30px;
                     display: flex;
                     justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
 
                     button{
                         color: rgb(246, 246, 228);;
@@ -288,6 +301,17 @@ section{
                         &:hover{
                             background-color: rgb(255, 131, 79);
                         }
+                    }
+
+                    .success-message {
+                        color: green;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                        visibility: hidden;
+                    }
+
+                    .success-message.visible {
+                        visibility: visible;
                     }
                 }
 

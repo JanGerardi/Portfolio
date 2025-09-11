@@ -1,56 +1,76 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
   nameError = false;
-  emailError = false;
+  emailEmptyError = false;
+  emailInvalidError = false;
   textError = false;
   privacyError = false;
+
   nameFocused = false;
   emailFocused = false;
   messageFocused = false;
 
-  sendMail(event: Event, nameInput: HTMLInputElement, emailInput: HTMLInputElement, messageInput: HTMLTextAreaElement, checkbox: HTMLInputElement) {
-    event.preventDefault();
+  submitSuccess = false;
 
-    this.nameError = false;
-    this.emailError = false;
-    this.textError = false;
-    this.privacyError = false;
+  mailTest = false;
 
-    if (!nameInput.value.trim()) {
-      this.nameError = true;
-    }
-    if (!emailInput.value.trim() || !this.validateEmail(emailInput.value)) {
-      this.emailError = true;
-    }
-    if (!messageInput.value.trim()) {
-      this.textError = true;
-    }
-    if (!checkbox.checked) {
-      this.privacyError = true;
-    }
+  http = inject(HttpClient)
 
-    if (this.nameError || this.emailError || this.textError || this.privacyError) {
-      return;
+  contactData = {
+    name: "",
+    email: "",
+    message: "",
+    privacy: false
+  };
+
+  post = {
+    endPoint: 'https://jan-gerardi.de/portfolio/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm){
+    this.nameError = !this.contactData.name.trim();
+    this.emailEmptyError = !this.contactData.email.trim();
+    this.emailInvalidError = !this.emailEmptyError && !/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(this.contactData.email);
+    this.textError = !this.contactData.message.trim();
+    this.privacyError = !this.contactData.privacy;
+
+    if (ngForm.valid && ngForm.submitted && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      .subscribe({
+        next: (response) => {
+          ngForm.resetForm();
+          this.submitSuccess = true;
+        },
+        error: (error) => {
+          console.error(error);
+          this.submitSuccess = false;
+        },
+        complete: () => console.info('send post complete'),
+      });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
+      this.submitSuccess = true;
+    }  else {
+      this.submitSuccess = false;
     }
-
-    nameInput.value = '';
-    emailInput.value = '';
-    messageInput.value = '';
-    checkbox.checked = false;
-  }
-
-  private validateEmail(email: string): boolean {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
   }
 }
