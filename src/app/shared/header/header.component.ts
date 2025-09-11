@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +11,9 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 export class HeaderComponent {
 
   isMenuOpen = false;
+  currentLanguage = 'en';
+
+  constructor(private translate: TranslateService){}
 
   openMenu() {
     this.isMenuOpen = true;
@@ -22,5 +25,10 @@ export class HeaderComponent {
 
   onMenuItemClick() {
     this.closeMenu();
+  }
+
+  changeLanguage(language: string){
+    this.translate.use(language);
+    this.currentLanguage = language;
   }
 }

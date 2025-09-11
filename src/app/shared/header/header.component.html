@@ -25,7 +25,8 @@
             <p>erardi</p>
         </div>
         <div id="menu-bar">
-            <button>EN</button>
+            <button *ngIf="currentLanguage === 'de'" (click)="changeLanguage('en')">EN</button>
+            <button *ngIf="currentLanguage === 'en'" (click)="changeLanguage('de')">DE</button>
             <div class="burger-menu" (click)="openMenu()">&#9776;</div>
         </div>
     </div>
