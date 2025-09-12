@@ -7,7 +7,9 @@
         "section-4": "References",
         "section-5": "Contact Me"
     },
-    "hero":{
-
+    "hero": {
+        "greeting": "Hello there! I'm",
+        "role": "Frontend Developer",
+        "button": "Get in Touch"
     }
 }

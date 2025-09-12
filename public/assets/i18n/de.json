@@ -1,5 +1,5 @@
 {
-        "header": {
+    "header": {
         "menu-title": "Menü",
         "section-1": "Über mich",
         "section-2": "Fähigkeiten",
@@ -7,7 +7,9 @@
         "section-4": "Referenzen",
         "section-5": "Kontakt"
     },
-    "hero":{
-        
+    "hero": {
+        "greeting": "Hallo! Ich bin",
+        "role": "Frontend-Entwickler",
+        "button": "Kontakt aufnehmen"
     }
 }
