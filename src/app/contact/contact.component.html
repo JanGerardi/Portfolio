@@ -3,43 +3,50 @@
         <div class="contact-content">
             <div class="section-content">
                 <div class="left-content">
-                    <h2>Let's build<br>something Cool together!</h2>
-                    <p class="question">Are you interested?</p>
-                    <p>With my combined expertise in frontend development and a strong foundation in project management, I bring real value to your projects. I work in a solution-oriented and collaborative way, always keeping user needs and project goals in focus. I'm especially motivated by the opportunity to actively contribute to the development and coordination of digital products—whether through hands-on coding or by facilitating communication between teams and stakeholders. My goal is not just to complete tasks, but to drive meaningful progress within the company.</p>
+                    <h2 [innerHTML]="'contact.headline' | translate"></h2>
+                    <p class="question">{{ 'contact.question' | translate }}</p>
+                    <p>{{ 'contact.intro' | translate }}</p>
                 </div>
                 <div class="right-content">
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" autocomplete="off">
                         <div class="top-formular">
                             <div>
-                                <label [class.focused]="nameFocused" for="name">What's your name?</label>
+                                <label [class.focused]="nameFocused" for="name">{{ 'contact.labels.name' | translate }}</label>
                                 <input [(ngModel)]="contactData.name" type="text" name="name"
-                                [placeholder]="nameError ? 'Please enter your Name.' : 'Enter your Name'"
+                                [placeholder]="nameError ? ('contact.errors.nameRequired' | translate) : ('contact.placeholders.name' | translate)"
                                 [class.error]="nameError" (focus)="nameError = false; nameFocused = true" (blur)="nameFocused = false" required>
                             </div>
                             <div>
-                                <label [class.focused]="emailFocused" for="email">What's your E-Mail?</label>
+                                <label [class.focused]="emailFocused" for="email">{{ 'contact.labels.email' | translate }}</label>
                                 <input [(ngModel)]="contactData.email" type="email" name="email"
-                                [placeholder]="emailEmptyError ? 'Please enter your E-Mail.' : 'youremail@email.com'"
-                                [class.error]="emailEmptyError || emailInvalidError" (focus)="emailEmptyError = false; emailInvalidError = false; emailFocused = true" (blur)="emailFocused = false" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                                <p [class.visible]="emailInvalidError" class="error-message">Please enter a valid E-Mail address.</p>
+                                [placeholder]="emailEmptyError ? ('contact.errors.emailRequired' | translate) : ('contact.placeholders.email' | translate)"
+                                [class.error]="emailEmptyError || emailInvalidError"
+                                (focus)="emailEmptyError = false; emailInvalidError = false; emailFocused = true"
+                                (blur)="emailFocused = false" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                                <p [class.visible]="emailInvalidError" class="error-message">{{ 'contact.errors.emailInvalid' | translate }}</p>
                             </div>
                         </div>
                         <div class="center-formular">
-                            <label [class.focused]="messageFocused" for="message">How can I help you?</label>
+                            <label [class.focused]="messageFocused" for="message">{{ 'contact.labels.message' | translate }}</label>
                             <textarea [(ngModel)]="contactData.message" name="message" rows="1"
-                            [placeholder]="textError ? 'Please enter your Message.' : 'Hello Jan, I am interested in ...'"
+                            [placeholder]="textError ? ('contact.errors.messageRequired' | translate) : ('contact.placeholders.message' | translate)"
                             [class.error]="textError" (focus)="textError = false; messageFocused = true" (blur)="messageFocused = false" required></textarea>
                         </div>
                         <div class="privacy">
                             <div class="checkbox">
-                                <input [(ngModel)]="contactData.privacy" type="checkbox" id="checkbox" name="privacy" [class.error]="privacyError" (change)="privacyError = false" required>
-                                <span>I've read the <a routerLink="privacy-policy">privacy policy</a> and agree to the processing of my data.</span>
+                                <input [(ngModel)]="contactData.privacy" type="checkbox" id="checkbox" name="privacy" 
+                                [class.error]="privacyError" (change)="privacyError = false" required>
+                                <span>
+                                    {{ 'contact.privacyText.part1' | translate }}
+                                    <a routerLink="/privacy-policy">{{ 'contact.privacyText.link' | translate }}</a>
+                                    {{ 'contact.privacyText.part2' | translate }}
+                                </span>
                             </div>
-                            <p [class.visible]="privacyError" class="error-message">Please agree to the privacy policy.</p>
+                            <p [class.visible]="privacyError" class="error-message">{{ 'contact.errors.privacyPolicy' | translate }}</p>
                         </div>
                         <div class="button-formular">
-                            <p [class.visible]="submitSuccess" class="success-message">Your message has been sent successfully!</p>
-                            <button type="submit">Drop a Line</button>
+                            <p [class.visible]="submitSuccess" class="success-message">{{ 'contact.submitSuccess' | translate }}</p>
+                            <button type="submit">{{ 'contact.submitButton' | translate }}</button>
                         </div>
                     </form>
                 </div>

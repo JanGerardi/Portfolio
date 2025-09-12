@@ -66,5 +66,34 @@
             "comment": "Jan ist ein hervorragender Teamplayer, der sich gerne und auch zielführend in die Gruppe eingebracht hat. Er arbeitet sich mit großer Neugierde und Sorgfalt in neue Themen ein und war damit eine absolute Bereicherung für das Team. Cleaner Code und Einfühlvermögen für andere Teammitglieder sind für ihn eine Selbstverständlichkeit. Genauso darf der Spaß beim Arbeiten für ihn nicht fehlen."
         },
         "button": "Zum GitHub-Profil >>"
+    },
+    "contact": {
+        "headline": "Lass uns zusammen<br>etwas Cooles bauen!",
+        "question": "Bist du interessiert?",
+        "intro": "Mit meiner Kombination aus Frontend-Know-how und einer soliden Grundlage im Projektmanagement bringe ich echten Mehrwert für Projekte. Ich arbeite lösungsorientiert und kooperativ, mit stets im Fokus: die Bedürfnisse der Nutzer und die Ziele des Projekts. Besonders motiviert mich die Möglichkeit, aktiv an Entwicklung und Koordination digitaler Produkte mitzuwirken. Sei es durch direktes Coden oder durch die Vermittlung zwischen Teams und Stakeholdern. Mein Ziel ist es nicht nur, Aufgaben zu erledigen, sondern echten Fortschritt für das Unternehmen voranzutreiben.",
+        "labels": {
+            "name": "Wie ist dein Name?",
+            "email": "Wie lautet deine E-Mail?",
+            "message": "Wie kann ich dir helfen?"
+        },
+        "placeholders": {
+            "name": "Gib deinen Namen ein",
+            "email": "deine@mail.de",
+            "message": "Hallo Jan, ich interessiere mich für ..."
+        },
+        "errors": {
+            "nameRequired": "Bitte gib deinen Namen an.",
+            "emailRequired": "Bitte gib deine E-Mail an.",
+            "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+            "messageRequired": "Bitte gib deine Nachricht ein.",
+            "privacyPolicy": "Bitte stimme der Datenschutzerklärung zu."
+        },
+        "privacyText": {
+            "part1": "Ich habe die",
+            "link": "Datenschutzerklärung",
+            "part2": "gelesen und stimme der Verarbeitung meiner Daten zu."
+        },
+        "submitSuccess": "Deine Nachricht wurde erfolgreich gesendet!",
+        "submitButton": "Nachricht senden"
     }
 }
