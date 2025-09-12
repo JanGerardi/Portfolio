@@ -210,19 +210,15 @@ section {
                         background: none;
                         border-color: rgb(246, 246, 228);
                         border-style: solid;
-                        border-radius: 20px;
+                        border-radius: 30px;
                         border-width: 1px;
-                        font-size: 18px;
-                        padding: 5px 10px;
+                        font-size: 16px;
+                        padding: 10px 20px;
                         margin-right: 30px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         text-align: center;
-
-                        @media(max-height: 740px) {
-                            font-size: 16px;
-                        }
 
                         &:hover {
                             background-color: rgb(255, 131, 79);

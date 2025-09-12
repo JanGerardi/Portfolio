@@ -27,10 +27,28 @@
     },
     "skills": {
         "title": "Core Competencies",
-        "intro": "I enjoy working with HTML and CSS, as it gives me the opportunity to build clear and responsive website structures. In doing so, I have gained initial experience in creating layouts that adapt to different devices and contribute to a positive user experience.",
+        "intro": "I really enjoy working with HTML and CSS because it allows me to build clean, responsive layouts – and I have fun turning ideas into structures that work well across different devices. Along the way, I’ve gained valuable experience in creating user-friendly designs that improve the browsing experience.",
         "overlay": {
             "title": "Don't see the skill you<br>are looking for?",
             "description": "Feel free to contact me. I look forward to expanding on my previous knowledge.<br>Especially in:"
+        }
+    },
+    "portfolio": {
+        "title": "My work",
+        "description": "Explore a selection of my work here - Interact with the projects to see my skills in action.",
+        "buttons": {
+            "previous": "<< Previous project",
+            "next": "Next project >>"
+        },
+        "projects": {
+            "join": {
+                "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+                "development": "In the Join project, I was responsible for coordinating the team and leading daily meetings. At the same time, I contributed equally to the programming and consistently provided helpful and solution-oriented support when challenges arose."
+            },
+            "el-pollo-loco": {
+                "description": "A 2D platformer in the spirit of Super Mario, reimagined with a lively Mexican theme – from sombreros to mariachi music.",
+                "development": "As part of the Jump'n'Run project, I was solely responsible for the concept, planning, and implementation. I structured the development process, defined clear milestones, and consistently kept track of the overall progress."
+            }
         }
     }
 }

@@ -27,10 +27,28 @@
     },
     "skills": {
         "title": "Kernkompetenzen",
-        "intro": "Ich arbeite gerne mit HTML und CSS, da ich dadurch klare und responsive Webseiten-Strukturen erstellen kann. Dabei habe ich erste Erfahrungen im Erstellen von Layouts gesammelt, die sich an verschiedene Geräte anpassen und zu einem positiven Nutzererlebnis beitragen.",
+        "intro": "Die Arbeit mit HTML und CSS macht mir großen Spaß, weil ich damit klare, responsive Layouts gestalten kann. Es begeistert mich, Ideen in funktionierende Strukturen zu verwandeln, die sich an verschiedene Geräte anpassen. Dabei habe ich wertvolle Erfahrungen in der Gestaltung benutzerfreundlicher Oberflächen gesammelt, die das Nutzererlebnis verbessern.",
         "overlay": {
             "title": "Ist die gesuchte Fähigkeit nicht dabei?",
             "description": "Melde dich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen – besonders in den Bereichen:"
+        }
+    },
+    "portfolio": {
+        "title": "Meine Projekte",
+        "description": "Hier findest du eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+        "buttons": {
+            "previous": "<< Vorheriges Projekt",
+            "next": "Nächstes Projekt >>"
+        },
+        "projects": {
+            "join": {
+                "description": "Ein Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
+                "development": "Im Join-Projekt war ich für die Teamkoordination und die täglichen Meetings verantwortlich. Gleichzeitig habe ich aktiv mitentwickelt und das Team bei Herausforderungen lösungsorientiert unterstützt."
+            },
+            "el-pollo-loco": {
+                "description": "Ein 2D-Platformer im Stil von Super Mario – neu interpretiert mit lebendigem mexikanischem Flair, von Sombreros bis Mariachi-Musik.",
+                "development": "Beim Jump'n'Run-Projekt war ich allein für Konzept, Planung und Umsetzung verantwortlich. Ich habe den Entwicklungsprozess strukturiert, Meilensteine definiert und den Überblick über den Gesamtfortschritt behalten."
+            }
         }
     }
 }

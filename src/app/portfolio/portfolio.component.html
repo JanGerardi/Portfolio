@@ -3,9 +3,9 @@
         <div class="portfolio-content">
             <div class="section-content">
                 <div class="top-content">
-                    <h2>My work</h2>
+                    <h2>{{ 'portfolio.title' | translate }}</h2>
                     <div class="top-container">
-                        <p>Explore a selection of my work here - Interact with the projects to see my skills in action.</p>
+                        <p>{{ 'portfolio.description' | translate }}</p>
                     </div>
                 </div>
                 <div class="bottom-content">
@@ -20,18 +20,18 @@
                                 <img src="./assets/image/check.png" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()"  (click)="showOverlayMobile()">
                             </div>
                             <p class="project-skill">{{projects[currentIndex].skills}}</p>
-                            <p>{{projects[currentIndex].description}}</p>
+                            <p>{{ 'portfolio.projects.' + projects[currentIndex].id + '.description' | translate }}</p>
                             <div class="github">
                                 <a [href]="projects[currentIndex].github" target="_blank">GitHub</a>
                                 <a [href]="projects[currentIndex].live" target="_blank">Live Test</a>
                             </div>
                         </div>
                         <div class="switch-buttons">
-                            <button (click)="previousProject()"><< Previous project</button>
-                            <button (click)="nextProject()">Next project >></button>
+                            <button (click)="previousProject()">{{ 'portfolio.buttons.previous' | translate }}</button>
+                            <button (click)="nextProject()">{{ 'portfolio.buttons.next' | translate }}</button>
                         </div>
                         <div class="overlay" [class.open]="isOverlayOpen">
-                            <p>{{projects[currentIndex].development}}</p>
+                            <p>{{ 'portfolio.projects.' + projects[currentIndex].id + '.development' | translate }}</p>
                             <div class="close-overlay">
                                 <img
                                 class="close-icon"
