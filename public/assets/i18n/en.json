@@ -95,5 +95,66 @@
         },
         "submitSuccess": "Your message has been sent successfully!",
         "submitButton": "Send Message"
+    },
+    "footer": {
+        "imprint": "Imprint"
+    },
+    "imprint": {
+        "title": "Imprint",
+        "legalNotice": "Information in accordance with § 5 TMG",
+        "responsible": "Responsible for content according to § 55 para. 2 RStV",
+        "country": "Germany",
+        "disclaimer": "This portfolio is intended solely for the personal presentation of my work.<br>It is a non-commercial project.<br>Commercial use or marketing is not intended."
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "section1": {
+            "title": "1. Data Controller",
+            "country": "Germany"
+        },
+
+        "section2": {
+            "title": "2. General Information on Data Processing",
+            "text": "We process personal data of users only to the extent necessary to provide our website and to handle inquiries."
+        },
+
+        "section3": {
+            "title": "3. Legal Basis",
+            "text": "The processing of personal data is based on the following legal grounds:",
+            "list": {
+                "0": "Art. 6 (1) lit. f GDPR (legitimate interest in a secure and functional website)",
+                "1": "Art. 6 (1) lit. b GDPR (processing for the performance of a contract or pre-contractual measures when contacting us)"
+            }
+        },
+
+        "section4": {
+            "title": "4. Server Log Files",
+            "text": "When visiting the website, our hosting provider automatically collects data (e.g. IP address, date/time, browser type), which is stored in log files. This data is used for security purposes and is usually deleted after 30 days."
+        },
+
+        "section5": {
+            "title": "5. Contact Form",
+            "text": "If you contact us via the contact form, we process your information (name, email address, message) to handle your request. The data will not be shared with third parties and will be deleted after your request has been processed, unless legal retention obligations apply."
+        },
+
+        "section6": {
+            "title": "6. Use of Google Fonts",
+            "text": "We use external fonts from Google Fonts on our website. When the page is accessed, a connection is established to Google servers (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland), which may transmit your IP address. The use is in the interest of a consistent and attractive presentation of the website (Art. 6 (1) lit. f GDPR).",
+            "linkText": "Google's Privacy Policy"
+        },
+
+        "section7": {
+            "title": "7. Rights of Data Subjects",
+            "text": "You have the right to:",
+            "list": {
+                "0": "Access your stored data (Art. 15 GDPR)",
+                "1": "Correct inaccurate data (Art. 16 GDPR)",
+                "2": "Delete your data (Art. 17 GDPR)",
+                "3": "Restrict processing (Art. 18 GDPR)",
+                "4": "Data portability (Art. 20 GDPR)",
+                "5": "Object to processing (Art. 21 GDPR)"
+            },
+            "footer": "To exercise your rights, simply send us an informal email.<br/>Last updated: September 12, 2025"
+        }
     }
 }

@@ -1,26 +1,22 @@
 <section>
-    <h1>Impressum</h1>
-    <p><strong>Angaben gemäß § 5 TMG</strong></p>
+    <h1>{{ 'imprint.title' | translate }}</h1>
+    <p><strong>{{ 'imprint.legalNotice' | translate }}</strong></p>
     <p>
         Jan Gerardi<br/>
         Neustädtischer Markt 14<br/>
         14776 Brandenburg<br/>
-        Deutschland
+        {{ 'imprint.country' | translate }}
     </p>
 
     <p>E-Mail: jan_gerardi&#64;outlook.com</p>
 
-    <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong></p>
+    <p><strong>{{ 'imprint.responsible' | translate }}</strong></p>
     <p>
         Jan Gerardi<br/>
         Neustädtischer Markt 14<br/>
         14776 Brandenburg<br/>
-        Deutschland
+        {{ 'imprint.country' | translate }}
     </p>
 
-    <p>
-        Dieses Portfolio dient ausschließlich der persönlichen Darstellung meiner
-        Arbeiten.<br/>Es handelt sich um ein nicht-kommerzielles Projekt.<br/>Eine
-        kommerzielle Nutzung oder Vermarktung ist nicht beabsichtigt.
-    </p>
+    <p [innerHTML]="'imprint.disclaimer' | translate"></p>
 </section>

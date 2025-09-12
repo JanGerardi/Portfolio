@@ -95,5 +95,66 @@
         },
         "submitSuccess": "Deine Nachricht wurde erfolgreich gesendet!",
         "submitButton": "Nachricht senden"
+    },
+    "footer": {
+        "imprint": "Impressum"
+    },
+    "imprint": {
+        "title": "Impressum",
+        "legalNotice": "Angaben gemäß § 5 TMG",
+        "responsible": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+        "country": "Deutschland",
+        "disclaimer": "Dieses Portfolio dient ausschließlich der persönlichen Darstellung meiner Arbeiten.<br>Es handelt sich um ein nicht-kommerzielles Projekt.<br>Eine kommerzielle Nutzung oder Vermarktung ist nicht beabsichtigt."
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "section1": {
+            "title": "1. Verantwortlicher",
+            "country": "Deutschland"
+        },
+
+        "section2": {
+            "title": "2. Allgemeine Hinweise zur Datenverarbeitung",
+            "text": "Wir verarbeiten personenbezogene Daten der Nutzer nur, soweit dies zur Bereitstellung unserer Website sowie zur Bearbeitung von Anfragen erforderlich ist."
+        },
+
+        "section3": {
+            "title": "3. Rechtsgrundlagen",
+            "text": "Die Verarbeitung personenbezogener Daten erfolgt auf Basis folgender Rechtsgrundlagen:",
+            "list": {
+                "0": "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren, funktionalen Website)",
+                "1": "Art. 6 Abs. 1 lit. b DSGVO (Verarbeitung zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen bei Kontaktaufnahme)"
+            }
+        },
+
+        "section4": {
+            "title": "4. Server-Logfiles",
+            "text": "Beim Besuch der Website erhebt unser Hosting-Anbieter automatisch Daten (z.B. IP-Adresse, Datum/Uhrzeit, Browsertyp), die in Logfiles gespeichert werden. Diese Daten dienen der Sicherheit und werden in der Regel nach 30 Tagen gelöscht."
+        },
+
+        "section5": {
+            "title": "5. Kontaktformular",
+            "text": "Wenn Sie uns über das Kontaktformular schreiben, verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage. Die Daten werden nicht an Dritte weitergegeben und nach abschließender Bearbeitung gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen."
+        },
+
+        "section6": {
+            "title": "6. Verwendung von Google Fonts",
+            "text": "Auf unserer Website verwenden wir externe Schriftarten von Google Fonts. Beim Aufruf der Seite wird eine Verbindung zu Servern von Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) hergestellt, wobei Ihre IP-Adresse übermittelt werden kann. Die Nutzung erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung der Website (Art. 6 Abs. 1 lit. f DSGVO).",
+            "linkText": "Datenschutzerklärung von Google"
+        },
+
+        "section7": {
+            "title": "7. Rechte der betroffenen Personen",
+            "text": "Sie haben das Recht auf:",
+            "list": {
+                "0": "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
+                "1": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+                "2": "Löschung Ihrer Daten (Art. 17 DSGVO)",
+                "3": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+                "4": "Datenübertragbarkeit (Art. 20 DSGVO)",
+                "5": "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)"
+            },
+            "footer": "Zur Ausübung Ihrer Rechte genügt eine formlose E-Mail an uns.<br/>Stand: 12. September 2025"
+        }
     }
 }
