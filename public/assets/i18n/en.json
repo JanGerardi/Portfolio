@@ -50,5 +50,21 @@
                 "development": "As part of the Jump'n'Run project, I was solely responsible for the concept, planning, and implementation. I structured the development process, defined clear milestones, and consistently kept track of the overall progress."
             }
         }
+    },
+    "references": {
+        "headline": {
+            "desktop": "What my colleagues say about me",
+            "mobile": "What my colleagues<br>say about me"
+        },
+        "reference-01": {
+            "comment": "I had the great pleasure of working with Jan on the 'Join' project. Like a seasoned Product Owner, he took over communication and organization, enabling the team to complete the project ahead of time. A real asset to any team. I'd work with him again anytime!"
+        },
+        "reference-02": {
+            "comment": "Thank you for all your support and collaboration. Your patience and strong sense of teamwork really helped move things forward. It means a lot to have you on the team."
+        },
+        "reference-03": {
+            "comment": "Jan is an excellent team player who actively contributed to the group. Clean code and empathy come naturally to him and so does having fun at work."
+        },
+        "button": "To GitHub profile >>" 
     }
 }

@@ -12,20 +12,20 @@ export class ReferenceListComponent {
 
   references: Array<SingleReference> = [
     {
+      id: "reference-01",
       name: "Kilian Heyne",
-      comment: "Ich hatte das große Glück, mit Jan am „Join“-Projekt zu arbeiten. Wie ein erfahrener Product Owner übernahm er die Kommunikation und Organisation im Team und sorgte für klare Strukturen, die uns ermöglichten das Projekt in verkürzter Zeit umzusetzen. Ein echter Gewinn für jedes Team - jederzeit wieder!",
       position: "Team Partner | Join",
       gitHub: "https://github.com/kilianheyne",
     },
     {
+      id: "reference-02",
       name: "Samaneh Papoli",
-      comment: "Vielen Dank für deine ganze Unterstützung und Zusammenarbeit. Deine Geduld und dein starkes Teamgefühl haben wirklich geholfen, die Arbeit voranzubringen. Besonders danke ich dir dafür, dass du dir für mich Zeit genommen, alles in Ruhe erklärt und mir geholfen hast, die Dinge besser und genauer zu verstehen. Es bedeutet mir echt viel, dich im Team zu haben.",
       position: "Team Partner | Join",
       gitHub: "https://github.com/samanehpapoli",
     },
     {
+      id: "reference-03",
       name: "Irene Kober",
-      comment: "Jan ist ein hervorragender Teamplayer, der sich gerne und auch zielführend in die Gruppe eingebracht hat. Er arbeitet sich mit großer Neugierde und Sorgfalt in neue Themen und war damit eine absolute Bereicherung für das Team. Cleaner Code und Einfühlvermögen für andere Teammitglieder sind für ihn eine Selbstverständlichkeit - genauso darf der Spaß beim Arbeiten für ihn nicht fehlen.",
       position: "Team Partner | Join",
       gitHub: "https://github.com/iri-ko",
     }

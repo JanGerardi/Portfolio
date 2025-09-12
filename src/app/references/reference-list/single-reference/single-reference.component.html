@@ -4,10 +4,10 @@
             <h3>{{reference.name}}</h3>
             <img src="./assets/image/symbol_orange.png" alt="">
         </div>
-        <p>{{reference.comment}}</p>
+        <p>{{ ('references.' + reference.id + '.comment') | translate }}</p>
         <p class="position">{{reference.position}}</p>
     </div>
     <div class="gitHub">
-        <a href="{{reference.gitHub}}" target="_blank">Zum GitHub profile >></a>
+        <a href="{{reference.gitHub}}" target="_blank">{{ 'references.button' | translate }}</a>
     </div>
 </section>
