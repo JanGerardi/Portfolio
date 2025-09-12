@@ -24,5 +24,13 @@
             "item-4": "Offen für Remote-Arbeit",
             "item-5": "Lösungsorientiert"
         }
+    },
+    "skills": {
+        "title": "Kernkompetenzen",
+        "intro": "Ich arbeite gerne mit HTML und CSS, da ich dadurch klare und responsive Webseiten-Strukturen erstellen kann. Dabei habe ich erste Erfahrungen im Erstellen von Layouts gesammelt, die sich an verschiedene Geräte anpassen und zu einem positiven Nutzererlebnis beitragen.",
+        "overlay": {
+            "title": "Ist die gesuchte Fähigkeit nicht dabei?",
+            "description": "Melde dich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen – besonders in den Bereichen:"
+        }
     }
 }

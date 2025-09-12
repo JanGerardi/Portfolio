@@ -24,5 +24,13 @@
             "item-4": "Open to work remote",
             "item-5": "Solution oriented"
         }
+    },
+    "skills": {
+        "title": "Core Competencies",
+        "intro": "I enjoy working with HTML and CSS, as it gives me the opportunity to build clear and responsive website structures. In doing so, I have gained initial experience in creating layouts that adapt to different devices and contribute to a positive user experience.",
+        "overlay": {
+            "title": "Don't see the skill you<br>are looking for?",
+            "description": "Feel free to contact me. I look forward to expanding on my previous knowledge.<br>Especially in:"
+        }
     }
 }

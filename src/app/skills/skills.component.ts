@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkillListComponent } from './skill-list/skill-list.component';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [SkillListComponent, CommonModule],
+  imports: [SkillListComponent, CommonModule, TranslateDirective, TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })

@@ -3,9 +3,9 @@
         <div class="skill-content">
             <div class="section-content">
                 <div class="top-content">
-                    <h2>Core Competencies</h2>
+                    <h2>{{ 'skills.title' | translate }}</h2>
                     <div class="content-container">
-                        <p>I enjoy working with HTML and CSS, as it gives me the opportunity to build clear and responsive website structures. In doing so, I have gained initial experience in creating layouts that adapt to different devices and contribute to a positive user experience.</p>
+                        <p>{{ 'skills.intro' | translate }}</p>
                     </div>
                 </div>
                 <div class="bottom-content">
@@ -21,8 +21,8 @@
                             (click)="hideOverlay()"
                             />
                         </div>
-                        <p class="top-line">Don't see the skill you<br>are looking for?</p>
-                        <p>Feel free to contact me. I look forward to expanding on my previous knowledge.<br>Especially in:</p>
+                        <p class="top-line" [innerHTML]="'skills.overlay.title' | translate"></p>
+                        <p [innerHTML]="'skills.overlay.description' | translate"></p>
                         <div class="skills">
                             <div>
                                 <img src="./assets/image/skills/css_icon.png">
