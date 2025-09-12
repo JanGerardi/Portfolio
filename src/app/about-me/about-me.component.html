@@ -2,20 +2,20 @@
     <div id="content">
         <div class="about-content">
             <div class="section-content">
-                <h2>About me</h2>
+                <h2>{{ 'about-me.title' | translate }}</h2>
                 <div class="about-background">
                     <img src=".\assets\image\work_picture.jpg" alt="">
                 </div>
                 <div class="about-container">
-                    <p>Hey there ,I'm Jan. I’m Jan, passionate about IT and especially enjoying the creative side of coding with HTML and SCSS, turning ideas into visually engaging and functional experiences. I enjoy leading teams, tackling challenges, and continuously learning new technologies while contributing to innovative projects.</p>
+                    <p>{{ 'about-me.intro' | translate }}</p>
                     <div class="about-more">
-                        <a href="#contact" class="button-link">Let's Talk</a>
+                        <a href="#contact" class="button-link">{{ 'about-me.button' | translate }}</a>
                         <img src=".\assets\image\emoji.png" alt="Emoji" (mouseenter)="showOverlay()" (mouseleave)="hideOverlay()" (click)="showOverlayMobile()">
                     </div>
                 </div>
                 <div class="overlay" [class.open]="isOverlayOpen">
                     <div class="top-overlay">
-                        <p>More about me</p>
+                        <p>{{ 'about-me.overlay-title' | translate }}</p>
                         <img
                             class="close-icon"
                             src="./assets/image/close_mobile.png"
@@ -23,11 +23,11 @@
                             />
                     </div>
                     <ul>
-                        <li><img src=".\assets\image\check_circle.png" alt="">Team player</li>
-                        <li><img src=".\assets\image\check_circle.png" alt="">Continuously learning</li>
-                        <li><img src=".\assets\image\check_circle.png" alt="">Based in Brandenburg</li>
-                        <li><img src=".\assets\image\check_circle.png" alt="">Open to work remote</li>
-                        <li><img src=".\assets\image\check_circle.png" alt="">Solution oriented</li>
+                        <li><img src=".\assets\image\check_circle.png" alt="">{{ 'about-me.list.item-1' | translate }}</li>
+                        <li><img src=".\assets\image\check_circle.png" alt="">{{ 'about-me.list.item-2' | translate }}</li>
+                        <li><img src=".\assets\image\check_circle.png" alt="">{{ 'about-me.list.item-3' | translate }}</li>
+                        <li><img src=".\assets\image\check_circle.png" alt="">{{ 'about-me.list.item-4' | translate }}</li>
+                        <li><img src=".\assets\image\check_circle.png" alt="">{{ 'about-me.list.item-5' | translate }}</li>
                     </ul>
                 </div>
             </div>

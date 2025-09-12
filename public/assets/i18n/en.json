@@ -11,5 +11,18 @@
         "greeting": "Hello there! I'm",
         "role": "Frontend Developer",
         "button": "Get in Touch"
+    },
+    "about-me": {
+        "title": "About me",
+        "intro": "Hey there, I'm Jan. I’m Jan, passionate about IT and especially enjoying the creative side of coding with HTML and SCSS, turning ideas into visually engaging and functional experiences. I enjoy leading teams, tackling challenges, and continuously learning new technologies while contributing to innovative projects.",
+        "button": "Let's Talk",
+        "overlay-title": "More about me",
+        "list": {
+            "item-1": "Team player",
+            "item-2": "Continuously learning",
+            "item-3": "Based in Brandenburg",
+            "item-4": "Open to work remote",
+            "item-5": "Solution oriented"
+        }
     }
 }

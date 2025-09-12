@@ -11,5 +11,18 @@
         "greeting": "Hallo! Ich bin",
         "role": "Frontend-Entwickler",
         "button": "Kontakt aufnehmen"
+    },
+    "about-me": {
+        "title": "Über mich",
+        "intro": "Hallo, ich bin Jan. Ich begeistere mich für IT und liebe besonders die kreative Seite des Codings mit HTML und SCSS. Ich verwandle Ideen in visuell ansprechende und funktionale Erlebnisse. Ich leite gerne Teams, löse Herausforderungen und lerne ständig neue Technologien, während ich an innovativen Projekten mitwirke.",
+        "button": "Kontakt aufnehmen",
+        "overlay-title": "Mehr über mich",
+        "list": {
+            "item-1": "Teamplayer",
+            "item-2": "Lernwillig",
+            "item-3": "Wohnhaft in Brandenburg",
+            "item-4": "Offen für Remote-Arbeit",
+            "item-5": "Lösungsorientiert"
+        }
     }
 }
