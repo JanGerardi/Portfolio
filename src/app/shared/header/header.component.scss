@@ -7,7 +7,7 @@ header{
 
 #content{
     width: 100%;
-    height: calc(12dvh + 1px);
+    height: calc(100px + 1px);
     max-width: 1920px;
     padding: 0px 100px;
     display: flex;
@@ -16,6 +16,7 @@ header{
 
     @media(max-width: 1024px){
         padding: 0px 50px;
+        height: calc(80px + 1px);
     }
 
     @media(max-width: 550px){

@@ -6,7 +6,7 @@ footer{
 
 #content{
     width: 100%;
-    height: calc(15dvh + 2px);
+    height: calc(150px + 1px);
     max-width: 1920px;
     padding: 0px 100px;
     display: flex;
@@ -16,6 +16,7 @@ footer{
 
     @media(max-width: 1415px) {
         padding: 0 50px;
+        height: calc(120px + 1px);
     }
 
     @media(max-width: 1180px) {
@@ -42,12 +43,12 @@ footer{
 
 #footer-symbols{
     height: 100%;
-    width: 350px;
+    width: 300px;
     display: flex;
     gap: 20px;
 
     @media(max-width: 1000px) {
-        width: 250px;
+        width: 260px;
     }
 
     @media(max-width: 780px) {
@@ -56,11 +57,11 @@ footer{
 
     @media(max-width: 650px) {
         height: 180px;
-        width: 180px;
+        width: 190px;
     }
 
     img:first-child {
-        height: 180px;
+        height: 150px;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -70,7 +71,7 @@ footer{
         animation-timing-function: linear;
 
         @media(max-width: 1000px) {
-            height: 130px;
+            height: 120px;
         }
 
         @media(max-width: 780px) {
@@ -83,7 +84,7 @@ footer{
     }
 
     img:last-child {
-        height: 250px;
+        height: 220px;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -94,7 +95,7 @@ footer{
         animation-direction: reverse;
 
         @media(max-width: 1000px) {
-            height: 200px;
+            height: 190px;
         }
 
         @media(max-width: 780px) {
