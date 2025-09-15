@@ -37,7 +37,7 @@ export class ContactComponent {
   };
 
   post = {
-    endPoint: 'https://jan-gerardi.de/portfolio/sendMail.php',
+    endPoint: 'https://jan-gerardi.com/portfolio/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

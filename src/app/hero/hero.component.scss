@@ -170,6 +170,11 @@ section{
                     width: calc(100% + 60px);
                     height: auto;
                 }
+
+                @media(max-height: 430px) {
+                    height: calc(100% + 70px);
+                    width: auto;
+                }
             }
         }
 
@@ -209,6 +214,12 @@ section{
                 @media(max-width: 400px){
                     height: 150px;
                     width: 150px;
+                }
+
+                @media(max-height: 430px) {
+                    height: 150px;
+                    width: 150px;
+                    top: -150px;
                 }
             }
         }
