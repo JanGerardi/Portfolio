@@ -20,7 +20,7 @@ export class PortfolioComponent {
       image: "./assets/image/join.png",
       skills: "HTML | CSS | Firebase | Angular | TypeScript",
       github: "https://github.com/JanGerardi/join",
-      live: ""
+      live: "https://join.jan-gerardi.com"
     },
     {
       id: "el-pollo-loco",
@@ -28,7 +28,7 @@ export class PortfolioComponent {
       image: "./assets/image/el_pollo_loco.png",
       skills: "HTML | CSS | JavaScript",
       github: "https://github.com/JanGerardi/el-pollo-loco",
-      live: ""
+      live: "https://el-pollo-loco.jan-gerardi.com"
     }
   ];
 
