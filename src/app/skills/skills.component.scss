@@ -1,5 +1,10 @@
 section {
     background-color: rgb(34, 34, 34);
+    scroll-margin-top: calc(100px + 1px);
+
+    @media(max-width: 1024px){
+        scroll-margin-top: calc(80px + 1px);
+    }
 }
 
 #content {

@@ -79,12 +79,12 @@
         "placeholders": {
             "name": "Enter your Name",
             "email": "your@email.com",
-            "message": "Hello Jan, I am interested in ..."
+            "message": "Hi Jan, I am interested in ..."
         },
         "errors": {
             "nameRequired": "Please enter your Name.",
             "emailRequired": "Please enter your E-Mail.",
-            "emailInvalid": "Please enter a valid E-Mail address.",
+            "emailInvalid": "Please enter a valid E-Mail.",
             "messageRequired": "Please enter your Message.",
             "privacyPolicy": "Please agree to the privacy policy."
         },

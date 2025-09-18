@@ -1,22 +1,24 @@
 <section>
-    <h1>{{ 'imprint.title' | translate }}</h1>
-    <p><strong>{{ 'imprint.legalNotice' | translate }}</strong></p>
-    <p>
-        Jan Gerardi<br/>
-        Neustädtischer Markt 14<br/>
-        14776 Brandenburg<br/>
-        {{ 'imprint.country' | translate }}
-    </p>
+    <div id="content">
+        <h1>{{ 'imprint.title' | translate }}</h1>
+        <p><strong>{{ 'imprint.legalNotice' | translate }}</strong></p>
+        <p>
+            Jan Gerardi<br/>
+            Neustädtischer Markt 14<br/>
+            14776 Brandenburg<br/>
+            {{ 'imprint.country' | translate }}
+        </p>
 
-    <p>E-Mail: jan_gerardi&#64;outlook.com</p>
+        <p>E-Mail: jan_gerardi&#64;outlook.com</p>
 
-    <p><strong>{{ 'imprint.responsible' | translate }}</strong></p>
-    <p>
-        Jan Gerardi<br/>
-        Neustädtischer Markt 14<br/>
-        14776 Brandenburg<br/>
-        {{ 'imprint.country' | translate }}
-    </p>
+        <p><strong>{{ 'imprint.responsible' | translate }}</strong></p>
+        <p>
+            Jan Gerardi<br/>
+            Neustädtischer Markt 14<br/>
+            14776 Brandenburg<br/>
+            {{ 'imprint.country' | translate }}
+        </p>
 
-    <p [innerHTML]="'imprint.disclaimer' | translate"></p>
+        <p [innerHTML]="'imprint.disclaimer' | translate"></p>
+    </div>
 </section>

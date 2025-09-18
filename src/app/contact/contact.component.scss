@@ -1,5 +1,10 @@
 section{
     background-color: rgb(34, 34, 34);
+    scroll-margin-top: calc(100px + 1px);
+
+    @media(max-width: 1024px){
+        scroll-margin-top: calc(80px + 1px);
+    }
 }
 
 #content{
@@ -12,11 +17,12 @@ section{
     color: rgb(246, 246, 228);
 
     @media(max-width: 1920px) {
-        height: calc(100dvh - 220px);
+        height: calc(100dvh - 219px);
     }
 
     @media(max-width: 1415px) {
         padding: 50px 50px;
+        height: calc(100dvh - 189px);
     }
 
     @media(max-width: 1180px) {
@@ -122,14 +128,14 @@ section{
                     font-size: 20px;
                     width: 100%;
 
-                    @media(max-width: 1310px) {
+                    @media(max-width: 1470px) {
                         flex-direction: column;
                     }
 
                     div{
                         width: 50%;
 
-                        @media(max-width: 1250px) {
+                        @media(max-width: 1470px) {
                             width: 100%;
                         }
 
@@ -162,6 +168,7 @@ section{
                             font-size: 14px;
                             font-weight: 600;
                             visibility: hidden;
+                            padding-left: 10px;
                         }
 
                         .error-message.visible {
@@ -174,6 +181,10 @@ section{
                     font-size: 20px;
                     width: 100%;
                     padding-top: 40px;
+
+                    @media(max-width: 1470px) {
+                        padding-top: 25px;
+                    }
 
                     label{
                         font-size: 22px;
