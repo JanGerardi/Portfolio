@@ -12,13 +12,13 @@
                         <div class="top-formular">
                             <div>
                                 <label [class.focused]="nameFocused" for="name">{{ 'contact.labels.name' | translate }}</label>
-                                <input [(ngModel)]="contactData.name" type="text" name="name"
+                                <input [(ngModel)]="contactData.name" (ngModelChange)="onDataChange()" type="text" name="name"
                                 [placeholder]="nameError ? ('contact.errors.nameRequired' | translate) : ('contact.placeholders.name' | translate)"
                                 [class.error]="nameError" (focus)="nameError = false; nameFocused = true" (blur)="nameFocused = false" required>
                             </div>
                             <div>
                                 <label [class.focused]="emailFocused" for="email">{{ 'contact.labels.email' | translate }}</label>
-                                <input [(ngModel)]="contactData.email" type="email" name="email"
+                                <input [(ngModel)]="contactData.email" (ngModelChange)="onDataChange()" type="email" name="email"
                                 [placeholder]="emailEmptyError ? ('contact.errors.emailRequired' | translate) : ('contact.placeholders.email' | translate)"
                                 [class.error]="emailEmptyError || emailInvalidError"
                                 (focus)="emailEmptyError = false; emailInvalidError = false; emailFocused = true"
@@ -28,13 +28,13 @@
                         </div>
                         <div class="center-formular">
                             <label [class.focused]="messageFocused" for="message">{{ 'contact.labels.message' | translate }}</label>
-                            <textarea [(ngModel)]="contactData.message" name="message" rows="1"
+                            <textarea [(ngModel)]="contactData.message" (ngModelChange)="onDataChange()" name="message" rows="1"
                             [placeholder]="textError ? ('contact.errors.messageRequired' | translate) : ('contact.placeholders.message' | translate)"
                             [class.error]="textError" (focus)="textError = false; messageFocused = true" (blur)="messageFocused = false" required></textarea>
                         </div>
                         <div class="privacy">
                             <div class="checkbox">
-                                <input [(ngModel)]="contactData.privacy" type="checkbox" id="checkbox" name="privacy" 
+                                <input [(ngModel)]="contactData.privacy" (change)="onDataChange()" type="checkbox" id="checkbox" name="privacy" 
                                 [class.error]="privacyError" (change)="privacyError = false" required>
                                 <span>
                                     {{ 'contact.privacyText.part1' | translate }}

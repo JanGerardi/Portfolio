@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { ContactDataService } from '../shared/services/contact-data.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,7 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
   nameError = false;
   emailEmptyError = false;
@@ -27,6 +28,7 @@ export class ContactComponent {
 
   mailTest = false;
 
+  contactDataService = inject(ContactDataService);
   http = inject(HttpClient)
 
   contactData = {
@@ -54,11 +56,14 @@ export class ContactComponent {
     this.textError = !this.contactData.message.trim();
     this.privacyError = !this.contactData.privacy;
 
+    this.contactDataService.setContactData(this.contactData);
+
     if (ngForm.valid && ngForm.submitted && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
           ngForm.resetForm();
+          this.contactDataService.resetContactData();
           this.submitSuccess = true;
         },
         error: (error) => {
@@ -69,9 +74,18 @@ export class ContactComponent {
       });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
+      this.contactDataService.resetContactData();
       this.submitSuccess = true;
     }  else {
       this.submitSuccess = false;
     }
+  }
+
+  ngOnInit() {
+    this.contactData = this.contactDataService.getContactData();
+  }
+
+  onDataChange() {
+    this.contactDataService.setContactData(this.contactData);
   }
 }
