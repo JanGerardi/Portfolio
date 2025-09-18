@@ -17,19 +17,19 @@ section{
     color: rgb(246, 246, 228);
 
     @media(max-width: 1920px) {
-        height: calc(100dvh - 219px);
+        height: calc(100dvh - 249px);
     }
 
     @media(max-width: 1415px) {
         padding: 50px 50px;
-        height: calc(100dvh - 189px);
+        height: calc(100dvh - 219px);
     }
 
     @media(max-width: 1180px) {
         padding: 50px 30px;
     }
 
-    @media(max-width: 1024px) or (max-height: 900px) {
+    @media(max-width: 1024px) or (max-height: 800px){
         height: auto;
     }
 
@@ -81,11 +81,7 @@ section{
                     font-family: "Eczar", sans-serif;
                     line-height: 1.2;
 
-                    @media(max-width: 1450px) {
-                        font-size: 54px;
-                    }
-
-                    @media(max-width: 1024px) {
+                    @media(max-width: 1500px) {
                         font-size: 48px;
                     }
 

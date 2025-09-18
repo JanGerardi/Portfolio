@@ -43,25 +43,21 @@ footer{
 
 #footer-symbols{
     height: 100%;
-    width: 300px;
+    width: 260px;
     display: flex;
     gap: 20px;
 
     @media(max-width: 1000px) {
-        width: 260px;
-    }
-
-    @media(max-width: 780px) {
         width: 200px;
     }
 
-    @media(max-width: 650px) {
+    @media(max-width: 780px) {
         height: 180px;
         width: 190px;
     }
 
     img:first-child {
-        height: 150px;
+        height: 120px;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -71,20 +67,16 @@ footer{
         animation-timing-function: linear;
 
         @media(max-width: 1000px) {
-            height: 120px;
-        }
-
-        @media(max-width: 780px) {
             height: 100px;
         }
 
-        @media(max-width: 650px) {
+        @media(max-width: 780px) {
             height: 80px;
         }
     }
 
     img:last-child {
-        height: 220px;
+        height: 190px;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -95,14 +87,10 @@ footer{
         animation-direction: reverse;
 
         @media(max-width: 1000px) {
-            height: 190px;
-        }
-
-        @media(max-width: 780px) {
             height: 170px;
         }
 
-        @media(max-width: 650px) {
+        @media(max-width: 780px) {
             height: 150px;
         }
     }
