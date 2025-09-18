@@ -1,6 +1,10 @@
 <section>
     <div id="content">
-        <h1>{{ 'privacy.title' | translate }}</h1>
+        <div class="top">
+            <h1>{{ 'privacy.title' | translate }}</h1>
+            <button (click)="goBack()">←</button>
+        </div>
+        
 
         <h2>{{ 'privacy.section1.title' | translate }}</h2>
         <p>

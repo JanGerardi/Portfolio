@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-imprint',
@@ -9,4 +10,11 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
 })
 export class ImprintComponent {
 
+  constructor(private location: Location) {
+
+    }
+
+  goBack(): void {
+    this.location.back();
+  }
 }

@@ -1,6 +1,10 @@
 <section>
     <div id="content">
-        <h1>{{ 'imprint.title' | translate }}</h1>
+        <div class="top">
+            <h1>{{ 'imprint.title' | translate }}</h1>
+            <button (click)="goBack()">←</button>
+        </div>
+
         <p><strong>{{ 'imprint.legalNotice' | translate }}</strong></p>
         <p>
             Jan Gerardi<br/>

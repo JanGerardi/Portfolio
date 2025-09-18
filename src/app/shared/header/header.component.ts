@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,12 +8,16 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   isMenuOpen = false;
   currentLanguage = 'en';
 
   constructor(private translate: TranslateService){}
+
+  ngOnInit() {
+    this.currentLanguage = this.translate.currentLang ?? this.translate.getDefaultLang() ?? 'en';
+  }
 
   openMenu() {
     this.isMenuOpen = true;
