@@ -17,9 +17,9 @@ export class AppComponent {
 
   constructor(private translate: TranslateService, private router: Router){
     this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('de');
     if (!this.translate.currentLang) {
-      this.translate.use('en');
+      this.translate.use('de');
     }
 
     this.router.events
