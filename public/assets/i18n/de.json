@@ -9,33 +9,32 @@
     },
     "hero": {
         "greeting": "Hallo! Ich bin",
-        "role": "Frontend-Entwickler",
         "button": "Kontakt aufnehmen"
     },
     "about-me": {
         "title": "Über mich",
-        "intro": "Hallo, ich bin Jan. Ich begeistere mich für IT und liebe besonders die kreative Seite des Codings mit HTML und SCSS. Ich verwandle Ideen in visuell ansprechende und funktionale Erlebnisse. Ich leite gerne Teams, löse Herausforderungen und lerne ständig neue Technologien, während ich an innovativen Projekten mitwirke.",
+        "intro": "Hallo, ich bin Jan. Ich liebe die kreative Seite des Codings mit HTML und SCSS und bringe als Projektleiter im technischen Umfeld ein tiefes Verständnis für komplexe Prozesse und Teamführung mit. Durch Weiterbildungen in Frontend-Entwicklung und agilen Methoden verbinde ich technisches Know-how mit strukturiertem Arbeiten.",
         "button": "Kontakt aufnehmen",
         "overlay-title": "Mehr über mich",
         "list": {
             "item-1": "Teamplayer",
             "item-2": "Lernwillig",
-            "item-3": "Wohnhaft in Brandenburg",
-            "item-4": "Offen für Remote-Arbeit",
+            "item-3": "Verantwortungsbewusst",
+            "item-4": "Zuverlässig",
             "item-5": "Lösungsorientiert"
         }
     },
     "skills": {
         "title": "Kernkompetenzen",
-        "intro": "Die Arbeit mit HTML und CSS macht mir großen Spaß, weil ich damit klare, responsive Layouts gestalten kann. Es begeistert mich, Ideen in funktionierende Strukturen zu verwandeln, die sich an verschiedene Geräte anpassen. Dabei habe ich wertvolle Erfahrungen in der Gestaltung benutzerfreundlicher Oberflächen gesammelt, die das Nutzererlebnis verbessern.",
+        "intro": "Die Arbeit mit HTML und CSS begeistert mich, weil ich damit klare, responsive Layouts gestalten und Ideen in funktionale Strukturen umsetzen kann, die sich flexibel anpassen. In agilen Projekten nach Scrum übernehme ich gerne Verantwortung, fördere Zusammenarbeit im Team und begleite Prozesse lösungsorientiert und strukturiert.",
         "overlay": {
             "title": "Ist die gesuchte Fähigkeit nicht dabei?",
-            "description": "Melde dich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen – besonders in den Bereichen:"
+            "description": "Melde dich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen - besonders in den Bereichen:"
         }
     },
     "portfolio": {
         "title": "Meine Projekte",
-        "description": "Hier findest du eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+        "description": "Hier findest du eine Auswahl meiner Arbeiten. Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
         "buttons": {
             "previous": "<< Vorheriges Projekt",
             "next": "Nächstes Projekt >>"
@@ -46,7 +45,7 @@
                 "development": "Im Join-Projekt war ich für die Teamkoordination und die täglichen Meetings verantwortlich. Gleichzeitig habe ich aktiv mitentwickelt und das Team bei Herausforderungen lösungsorientiert unterstützt."
             },
             "el-pollo-loco": {
-                "description": "Ein 2D-Platformer im Stil von Super Mario – neu interpretiert mit lebendigem mexikanischem Flair, von Sombreros bis Mariachi-Musik.",
+                "description": "Ein 2D-Platformer im Stil von Super Mario. Neu interpretiert mit lebendigem mexikanischem Flair, von Sombreros bis Mariachi-Musik.",
                 "development": "Beim Jump'n'Run-Projekt war ich allein für Konzept, Planung und Umsetzung verantwortlich. Ich habe den Entwicklungsprozess strukturiert, Meilensteine definiert und den Überblick über den Gesamtfortschritt behalten."
             }
         }
@@ -68,9 +67,9 @@
         "button": "Zum GitHub-Profil >>"
     },
     "contact": {
-        "headline": "Lass uns etwas<br>Cooles bauen!",
-        "question": "Bist du interessiert?",
-        "intro": "Mit meiner Kombination aus Frontend-Know-how und einer soliden Grundlage im Projektmanagement bringe ich echten Mehrwert für Projekte. Ich arbeite lösungsorientiert und kooperativ, mit stets im Fokus: die Bedürfnisse der Nutzer und die Ziele des Projekts. Besonders motiviert mich die Möglichkeit, aktiv an Entwicklung und Koordination digitaler Produkte mitzuwirken. Sei es durch direktes Coden oder durch die Vermittlung zwischen Teams und Stakeholdern. Mein Ziel ist es nicht nur, Aufgaben zu erledigen, sondern echten Fortschritt für das Unternehmen voranzutreiben.",
+        "headline": "Gemeinsam starten wir durch!",
+        "question": "Interesse geweckt?",
+        "intro": "Mit gezielten IT-Weiterbildungen und einer soliden Grundlage im Projektmanagement bringe ich echten Mehrwert für Projekte. Ich arbeite lösungsorientiert und kooperativ, stets mit Fokus auf die Bedürfnisse der Nutzer und die Ziele des Projekts. Besonders motiviert mich, aktiv an Entwicklung und Koordination digitaler Produkte mitzuwirken. Sei es durch direkte Umsetzung oder die Vermittlung zwischen Teams und Stakeholdern. Mein Ziel ist es, Projekte mit echtem Mehrwert zu entwickeln und umzusetzen.",
         "labels": {
             "name": "Wie ist dein Name?",
             "email": "Wie lautet deine E-Mail?",

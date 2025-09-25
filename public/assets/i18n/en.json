@@ -9,25 +9,24 @@
     },
     "hero": {
         "greeting": "Hello there! I'm",
-        "role": "Frontend Developer",
         "button": "Get in Touch"
     },
     "about-me": {
         "title": "About me",
-        "intro": "Hey there, I'm Jan. I’m Jan, passionate about IT and especially enjoying the creative side of coding with HTML and SCSS, turning ideas into visually engaging and functional experiences. I enjoy leading teams, tackling challenges, and continuously learning new technologies while contributing to innovative projects.",
+        "intro": "Hi, I'm Jan. I enjoy the creative side of coding with HTML and SCSS and bring a strong understanding of complex processes and team leadership from my experience as a project manager in technical environments. Through further training in frontend development and agile methods, I combine technical know-how with a structured and goal oriented approach.",
         "button": "Let's Talk",
         "overlay-title": "More about me",
         "list": {
             "item-1": "Team player",
             "item-2": "Continuously learning",
-            "item-3": "Based in Brandenburg",
-            "item-4": "Open to work remote",
+            "item-3": "Responsible",
+            "item-4": "Reliable",
             "item-5": "Solution oriented"
         }
     },
     "skills": {
         "title": "Core Competencies",
-        "intro": "I really enjoy working with HTML and CSS because it allows me to build clean, responsive layouts – and I have fun turning ideas into structures that work well across different devices. Along the way, I’ve gained valuable experience in creating user-friendly designs that improve the browsing experience.",
+        "intro": "Working with HTML and CSS excites me because it allows me to create clean, responsive layouts and turn ideas into functional structures that adapt flexibly. In agile projects using Scrum, I enjoy taking responsibility, fostering team collaboration, and guiding processes in a solution oriented and structured way.",
         "overlay": {
             "title": "Don't see the skill you<br>are looking for?",
             "description": "Feel free to contact me. I look forward to expanding on my previous knowledge.<br>Especially in:"
@@ -68,9 +67,9 @@
         "button": "To GitHub profile >>" 
     },
     "contact": {
-        "headline": "Let's build<br>something Cool!",
+        "headline": "Together, we move forward!",
         "question": "Are you interested?",
-        "intro": "With my combined expertise in frontend development and a strong foundation in project management, I bring real value to your projects. I work in a solution-oriented and collaborative way, always keeping user needs and project goals in focus. I'm especially motivated by the opportunity to actively contribute to the development and coordination of digital products—whether through hands-on coding or by facilitating communication between teams and stakeholders. My goal is not just to complete tasks, but to drive meaningful progress within the company.",
+        "intro": "With targeted IT training and a solid foundation in project management, I bring real added value to projects. I work solution oriented and collaboratively, always focusing on user needs and project goals. I am especially motivated to actively contribute to the development and coordination of digital products. Whether through direct implementation or facilitating communication between teams and stakeholders. My goal is to develop and deliver projects that create genuine value.",
         "labels": {
             "name": "What's your name?",
             "email": "What's your E-Mail?",
